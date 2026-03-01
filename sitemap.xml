@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage (EN + AR via JS language toggle) -->
+  <url>
+    <loc>https://kneecare.ae/</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://kneecare.ae/"/>
+    <xhtml:link rel="alternate" hreflang="ar"        href="https://kneecare.ae/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kneecare.ae/"/>
+  </url>
+
+  <!--
+    ┌──────────────────────────────────────────────────────────────┐
+    │  ADD BLOG ARTICLES HERE when they become real pages          │
+    │  Each entry should look like:                                │
+    │                                                              │
+    │  <url>                                                       │
+    │    <loc>https://kneecare.ae/blog/article-slug/</loc>        │
+    │    <lastmod>2026-03-01</lastmod>                             │
+    │    <changefreq>monthly</changefreq>                          │
+    │    <priority>0.7</priority>                                  │
+    │  </url>                                                      │
+    │                                                              │
+    │  Planned articles:                                           │
+    │  - /blog/how-long-cpm-machine-knee-replacement/             │
+    │  - /blog/knee-recovery-timeline/                            │
+    │  - /blog/cpm-vs-physiotherapy/                              │
+    │  - /blog/managing-pain-swelling-knee-surgery/               │
+    │  - /blog/cpm-machine-settings/                              │
+    │  - /blog/best-foods-knee-recovery/                          │
+    │  - /blog/exercises-with-cpm-machine/                        │
+    └──────────────────────────────────────────────────────────────┘
+  -->
+
+</urlset>
