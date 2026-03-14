@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kneecare.ae/sitemap.xml
+Sitemap: https://cpmrentdubai.com/sitemap.xml
