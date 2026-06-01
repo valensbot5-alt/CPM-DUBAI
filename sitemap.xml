@@ -1,15 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cpmrentdubai.com/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-06-01</lastmod>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://cpmrentdubai.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://cpmrentdubai.com/"/>
   </url>
-
+  <url>
+    <loc>https://cpmrentdubai.com/blog/anti-inflammatory-spices-joint-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/balance-training-knee-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/best-foods-knee-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/collagen-vitamin-c-knee-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/cpm-machine-after-acl-surgery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/cpm-machine-settings.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/cpm-rental-vs-buying.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/cpm-vs-physiotherapy.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/driving-after-knee-replacement.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/exercises-with-cpm-machine.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/first-week-physiotherapy-after-knee-replacement.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/how-long-cpm-machine-knee-replacement.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/how-many-hours-cpm-per-day.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/hydration-knee-surgery-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/knee-recovery-timeline.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/managing-pain-swelling-knee-surgery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/protein-timing-knee-recovery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cpmrentdubai.com/blog/sleeping-after-knee-surgery.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
