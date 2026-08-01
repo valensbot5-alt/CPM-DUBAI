@@ -1,3 +1,8 @@
 
 cpm-video/
 .DS_Store
+.playwright-mcp/
+.vercel/
+node_modules
+tenants/
+.claude/
