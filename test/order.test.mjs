@@ -52,7 +52,14 @@ test('only POST', async () => {
   assert.equal(r.code, 405);
 });
 
+test('preview and production origins are accepted', async () => {
+  for (const o of ['https://www.cpmrentdubai.com', 'https://cpm-dubai-ep1s2fx1n-valensbot5-alts-projects.vercel.app', 'https://cpm-dubai-git-feat-shop-rebrand-valensbot5-alts-projects.vercel.app']) {
+    assert.equal((await call(GOOD, { origin: o })).code, 200, o);
+  }
+});
+
 test('foreign origin is refused', async () => {
+  assert.equal((await call(GOOD, { origin: 'https://cpm-dubai.vercel.app.evil.example' })).code, 403);
   assert.equal((await call(GOOD, { origin: 'https://evil.example' })).code, 403);
   assert.equal((await call(GOOD, { origin: '' })).code, 403);
 });

@@ -7,7 +7,7 @@ const catalog = require('../lib/catalog.js');
 
 const EMIRATES = ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Al Ain', 'Ras Al Khaimah', 'Fujairah', 'Umm Al Quwain'];
 const PAYMENT = ['Card on delivery', 'Cash on delivery'];
-const ALLOWED_HOST = /^(www\.)?cpmrentdubai\.com$|^cpm-rent-dubai[a-z0-9-]*\.vercel\.app$|^(localhost|127\.0\.0\.1)(:\d+)?$/;
+const ALLOWED_HOST = /^(www\.)?cpmrentdubai\.com$|^cpm-dubai[a-z0-9-]*\.vercel\.app$|^(localhost|127\.0\.0\.1)(:\d+)?$/;
 const MAX_LINES = 20;
 
 // At most 5 requests per IP in 10 minutes, per function instance (rough spam guard).
