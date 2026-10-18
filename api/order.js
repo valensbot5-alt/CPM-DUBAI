@@ -105,7 +105,9 @@ module.exports = async function handler(req, res) {
   const topic = /^\d+$/.test(thread) ? { message_thread_id: Number(thread) } : {};
 
   try {
-    const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    // TELEGRAM_API only for local end to end tests against a mock server.
+    const base = process.env.TELEGRAM_API || 'https://api.telegram.org';
+    const r = await fetch(`${base}/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ chat_id: chat, ...topic, text: message(order), disable_web_page_preview: true }),
