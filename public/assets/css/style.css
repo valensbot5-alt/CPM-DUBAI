@@ -618,7 +618,7 @@ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 .tile:hover{transform:translateY(-3px); box-shadow:var(--shadow-lg); border-color:var(--brand)}
 .tile .ic{width:46px; height:46px; border-radius:12px; background:var(--brand-soft); color:var(--brand-dark); display:grid; place-items:center}
 .tile .ic svg{width:24px; height:24px}
-.tile h3{font-size:1.05rem; margin:0}
+.tile .tile-h{font-size:1.05rem; margin:0; color:var(--navy); font-weight:650; line-height:1.2}
 .tile .from{margin:auto 0 0; font-size:.92rem; color:var(--muted)}
 .tile .from b{color:var(--brand-dark)}
 @media (max-width:900px){.tiles{grid-template-columns:1fr 1fr; gap:12px} .tile{padding:16px}}
@@ -708,6 +708,6 @@ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
 @media (max-width:900px){.page-hero{padding:30px 0 20px} .page-hero .lead{text-align:center; margin:0 auto}}
 .hero-media .tiles{grid-template-columns:repeat(3,1fr); gap:10px}
 .hero-media .tile{padding:14px; box-shadow:none}
-.hero-media .tile h3{font-size:.95rem}
+.hero-media .tile .tile-h{font-size:.95rem}
 .hero-media .tile .from{font-size:.82rem}
 @media (max-width:900px){.hero-media .tiles{grid-template-columns:1fr 1fr}}

@@ -10,8 +10,8 @@ const HOW = [
   ['truck', 'Delivered, you pay on delivery', 'Cash or card at the door. Rentals are collected when you are done, extensions by message.'],
 ];
 
-function tiles(cats) {
-  return `<div class="tiles">${cats.map((c) => `<a class="tile" href="${catUrl(c)}"><span class="ic">${icon(c.icon)}</span><h3>${esc(c.name)}</h3><p class="from">${categoryFrom(c)}</p></a>`).join('')}</div>`;
+function tiles(cats, tag = 'h3') {
+  return `<div class="tiles">${cats.map((c) => `<a class="tile" href="${catUrl(c)}"><span class="ic">${icon(c.icon)}</span><${tag} class="tile-h">${esc(c.name)}</${tag}><p class="from">${categoryFrom(c)}</p></a>`).join('')}</div>`;
 }
 
 export function productCard(p) {
@@ -61,7 +61,7 @@ export function home() {
     <p class="hero-note">Questions? <a href="${waLink(`Hello ${SITE.name}, I have a question.`)}" target="_blank" rel="noopener">WhatsApp us</a> and a person replies.</p>
   </div>
   <div class="hero-media">
-    <div class="frame">${tiles(rentCats().slice(0, 6))}</div>
+    <div class="frame">${tiles(rentCats().slice(0, 6), 'p')}</div>
   </div>
 </div></section>
 
@@ -243,7 +243,7 @@ export function notFound() {
   return page({
     path: '/404', title: `Page not found | ${SITE.name}`, description: 'Page not found.', noindex: true,
     body: `<section class="page-hero"><div class="container"><h1>Page not found</h1><p class="lead">The page moved or no longer exists.</p></div></section>
-<section style="padding-top:28px"><div class="container">${tiles(rentCats().slice(0, 8))}<p style="margin-top:22px"><a class="btn btn-primary" href="/">Home</a></p></div></section>`,
+<section style="padding-top:28px"><div class="container">${tiles(rentCats().slice(0, 8), 'p')}<p style="margin-top:22px"><a class="btn btn-primary" href="/">Home</a></p></div></section>`,
   });
 }
 

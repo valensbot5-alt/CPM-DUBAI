@@ -7,17 +7,17 @@ function header() {
   const rent = rentCats().map((c) => `<a href="${catUrl(c)}">${esc(c.name)}</a>`).join('');
   const buy = saleCats().map((c) => `<a href="${catUrl(c)}">${esc(c.name)}</a>`).join('');
   return `<header class="site-header"><div class="container">
-  <a class="logo" href="/" aria-label="${esc(SITE.name)} home"><span class="logo-mark">${icon('activity')}</span><span>${esc(SITE.name)}<small>${esc(SITE.tagline)}</small></span></a>
+  <a class="logo" href="/"><span class="logo-mark">${icon('activity')}</span><span>${esc(SITE.name)}<small>${esc(SITE.tagline)}</small></span></a>
   <nav class="nav" id="nav" aria-label="Main">
     <div class="cities"><a href="/rent">Rent</a><div class="cities-menu cities-menu--col">${rent}</div></div>
     <div class="cities"><a href="/buy">Buy</a><div class="cities-menu cities-menu--col">${buy}</div></div>
     <a href="/rent/cpm">CPM machines</a>
     <a href="/delivery">Delivery</a>
-    <a class="nav-cart" href="/cart" aria-label="Cart">${icon('shopping-cart')}<span class="cart-count" data-cart-count hidden>0</span></a>
+    <a class="nav-cart" href="/cart">${icon('shopping-cart')}<span class="sr-only">Cart</span><span class="cart-count" data-cart-count hidden>0</span></a>
     <a class="nav-cta" href="${waLink(`Hello ${SITE.name}, I have a question.`)}" target="_blank" rel="noopener">${icon('message-circle')}WhatsApp</a>
   </nav>
   <div class="header-tools">
-    <a class="header-cart nav-cart" href="/cart" aria-label="Cart">${icon('shopping-cart')}<span class="cart-count" data-cart-count hidden>0</span></a>
+    <a class="header-cart nav-cart" href="/cart">${icon('shopping-cart')}<span class="sr-only">Cart</span><span class="cart-count" data-cart-count hidden>0</span></a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
   </div>
 </div></header>`;
