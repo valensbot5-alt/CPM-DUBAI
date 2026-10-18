@@ -6,3 +6,4 @@ cpm-video/
 node_modules
 tenants/
 .claude/
+dist/

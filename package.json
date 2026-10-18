@@ -1,0 +1,9 @@
+{
+  "name": "cpm-rent-dubai",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/",
+    "dev": "node build.mjs && npx --yes serve dist -l 4321"
+  }
+}
