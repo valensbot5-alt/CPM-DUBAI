@@ -4,6 +4,6 @@
   "scripts": {
     "build": "node build.mjs",
     "test": "node --test test/",
-    "dev": "node build.mjs && npx --yes serve dist -l 4321"
+    "dev": "node build.mjs && node scripts/dev-server.mjs"
   }
 }
