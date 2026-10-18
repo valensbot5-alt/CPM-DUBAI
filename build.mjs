@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { SITE, catalog, catUrl, productUrl } from './src/site.mjs';
 import * as pages from './src/pages.mjs';
+import * as content from './src/content.mjs';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const DIST = path.join(ROOT, 'dist');
@@ -28,6 +29,14 @@ write('/buy', pages.modeIndex('sale'));
 for (const c of catalog.categories) write(catUrl(c), pages.category(c));
 for (const p of catalog.products) write(productUrl(p), pages.product(p));
 write('/cart', pages.cart());
+write('/delivery', content.delivery());
+write('/rental-terms', content.rentalTerms());
+write('/returns', content.returns());
+write('/faq', content.faq());
+write('/contact', content.contact());
+write('/privacy', content.privacy());
+for (const [u, html] of content.emirates()) write(u, html);
+for (const [u, html] of content.blog()) write(u, html);
 
 // Slim catalog for the cart page (prices are recalculated on the server anyway).
 const slim = {};
