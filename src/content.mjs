@@ -161,7 +161,10 @@ function cleanArticle(html) {
     .replace(/<nav class="toc">/g, '<nav class="blog-toc">')
     .replace(/<table>/g, '<div class="price-table"><table>').replace(/<\/table>/g, '</table></div>')
     .replace(/https:\/\/cpmrentdubai\.com\/blog\/([a-z0-9-]+)\.html/g, '/blog/$1')
-    .replace(/href="\/blog\/([a-z0-9-]+)\.html/g, 'href="/blog/$1');
+    .replace(/href="\/blog\/([a-z0-9-]+)\.html/g, 'href="/blog/$1')
+    // house style: no dashes as separators; numeric ranges read "4 to 6"
+    .replace(/(\d)\s*[–—]\s*(\d)/g, '$1 to $2')
+    .replace(/\s*[–—]\s*/g, ', ');
 }
 
 export function blog() {

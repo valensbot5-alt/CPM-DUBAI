@@ -47,6 +47,29 @@ for (const p of catalog.products) {
 }
 fs.writeFileSync(path.join(DIST, 'assets/catalog.json'), JSON.stringify(slim));
 
+fs.writeFileSync(path.join(DIST, '404.html'), pages.notFound());
+
+const rentCats = catalog.categories.filter((c) => c.mode === 'rent');
+const saleCats = catalog.categories.filter((c) => c.mode === 'sale');
+fs.writeFileSync(path.join(DIST, 'llms.txt'), `# ${SITE.name}
+
+> Medical equipment rental and sale in Dubai, UAE. Customers choose equipment and rental dates online and send an order request; availability, delivery time and delivery fee are confirmed on WhatsApp, and payment is made on delivery (card or cash). No online payment.
+
+## Rent (prices in AED including VAT, cheapest combination of daily and package rates)
+${rentCats.map((c) => `- [${c.name}](${SITE.origin}${catUrl(c)}): ${c.intro}`).join('\n')}
+
+## Buy
+${saleCats.map((c) => `- [${c.name}](${SITE.origin}${catUrl(c)}): ${c.intro}`).join('\n')}
+
+## Help
+- [Delivery](${SITE.origin}/delivery)
+- [Rental terms](${SITE.origin}/rental-terms)
+- [Returns](${SITE.origin}/returns)
+- [FAQ](${SITE.origin}/faq)
+- [Recovery blog](${SITE.origin}/blog)
+- [Contact](${SITE.origin}/contact): WhatsApp ${SITE.phoneDisplay}
+`);
+
 const indexable = written.filter((u) => u !== '/cart');
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

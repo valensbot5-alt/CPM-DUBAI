@@ -239,6 +239,14 @@ ${related.length ? `<section class="bg-soft"><div class="container"><div class="
   });
 }
 
+export function notFound() {
+  return page({
+    path: '/404', title: `Page not found | ${SITE.name}`, description: 'Page not found.', noindex: true,
+    body: `<section class="page-hero"><div class="container"><h1>Page not found</h1><p class="lead">The page moved or no longer exists.</p></div></section>
+<section style="padding-top:28px"><div class="container">${tiles(rentCats().slice(0, 8))}<p style="margin-top:22px"><a class="btn btn-primary" href="/">Home</a></p></div></section>`,
+  });
+}
+
 export function cart() {
   const emirates = SITE.emirates.map((e) => `<option>${e}</option>`).join('');
   const body = `<section class="page-hero"><div class="container"><h1>Your cart</h1><p class="lead">Send the order request. We confirm availability and the delivery fee on WhatsApp, you pay on delivery.</p></div></section>
@@ -262,5 +270,5 @@ export function cart() {
     <p class="fine">Nothing is charged now. We only use your details to handle this order. <a href="/privacy">Privacy</a></p>
   </form>
 </div></section>`;
-  return page({ path: '/cart', title: `Cart | ${SITE.name}`, description: 'Your order request.', body, noindex: true });
+  return page({ path: '/cart', title: `Cart | ${SITE.name}`, description: 'Your cart and order request. Nothing is charged online; we confirm on WhatsApp and you pay on delivery.', body, noindex: true });
 }

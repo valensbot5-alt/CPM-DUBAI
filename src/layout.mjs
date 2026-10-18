@@ -92,6 +92,7 @@ ${o.body}
 </main>
 ${footer()}
 ${bar(o.waText || `Hello ${SITE.name}, I have a question.`)}
+<script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/pricing.js" defer></script>
 <script src="/assets/js/site.js" defer></script>
 </body>
