@@ -1,0 +1,468 @@
+[
+  {
+    "slug": "cpm-machine-knee-hip",
+    "name": "CPM machine for knee and hip",
+    "category": "cpm",
+    "summary": "Continuous passive motion machine for recovery after knee replacement, ACL reconstruction and hip surgery.",
+    "features": ["Delivered, set up and explained at home", "Range and speed set to your surgeon's protocol", "Sanitised between every patient", "Collected when you are done"],
+    "variants": [{"id": "std", "label": "Knee and hip"}],
+    "rent": {"periods": [{"days": 7, "price": 499}, {"days": 30, "price": 1499}]},
+    "price_source": "current-site"
+  },
+  {
+    "slug": "wheelchair-steel-foldable",
+    "name": "Foldable steel wheelchair",
+    "category": "wheelchairs",
+    "summary": "Sturdy everyday wheelchair that folds flat for the car boot.",
+    "features": ["Folding frame", "Removable footrests", "Attendant and user brakes"],
+    "variants": [
+      {"id": "standard", "label": "Standard legrest", "periods": [{"days": 1, "price": 15}, {"days": 7, "price": 70}, {"days": 30, "price": 150}, {"days": 60, "price": 250}]},
+      {"id": "elevated", "label": "Elevating legrest", "periods": [{"days": 1, "price": 15}, {"days": 30, "price": 350}, {"days": 60, "price": 560}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "wheelchair-lightweight-aluminium",
+    "name": "Lightweight aluminium wheelchair",
+    "category": "wheelchairs",
+    "summary": "Light folding wheelchair that is easy to lift, for travel and hospital visits.",
+    "features": ["Aluminium frame", "Folds for car and taxi", "Up to 115 kg"],
+    "variants": [
+      {"id": "standard", "label": "Standard legrest, up to 115 kg", "periods": [{"days": 1, "price": 30}, {"days": 7, "price": 157.5}, {"days": 14, "price": 297.15}, {"days": 30, "price": 350}, {"days": 60, "price": 500}]},
+      {"id": "elevated", "label": "Elevating legrest, up to 115 kg", "periods": [{"days": 1, "price": 40}, {"days": 3, "price": 100}, {"days": 7, "price": 200}, {"days": 14, "price": 350}, {"days": 30, "price": 450}, {"days": 60, "price": 650}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "wheelchair-bariatric",
+    "name": "Heavy duty bariatric wheelchair",
+    "category": "wheelchairs",
+    "summary": "Wide seat, reinforced frame for users up to 170 kg.",
+    "features": ["Reinforced folding frame", "Wide seat", "Choice of weight capacity"],
+    "variants": [
+      {"id": "120", "label": "Up to 120 kg"},
+      {"id": "140", "label": "Up to 140 kg"},
+      {"id": "170", "label": "Up to 170 kg"}
+    ],
+    "rent": {"periods": [{"days": 1, "price": 30}, {"days": 7, "price": 150}, {"days": 30, "price": 350}, {"days": 60, "price": 500}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "wheelchair-paediatric",
+    "name": "Paediatric wheelchair",
+    "category": "wheelchairs",
+    "summary": "Child sized folding wheelchair.",
+    "features": ["Child sized seat", "Folding frame", "Choice of legrest"],
+    "variants": [
+      {"id": "standard", "label": "Standard legrest", "periods": [{"days": 1, "price": 15}, {"days": 7, "price": 70}, {"days": 30, "price": 150}, {"days": 60, "price": 270}]},
+      {"id": "elevated", "label": "Elevating legrest", "periods": [{"days": 1, "price": 15}, {"days": 30, "price": 350}, {"days": 60, "price": 560}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "power-wheelchair-foldable",
+    "name": "Foldable power wheelchair",
+    "category": "power-wheelchairs",
+    "summary": "Electric wheelchair with joystick that folds for the car.",
+    "features": ["Joystick control", "Folding frame", "Charger included"],
+    "variants": [{"id": "100", "label": "Up to 100 kg"}, {"id": "130", "label": "Up to 130 kg"}],
+    "rent": {"periods": [{"days": 1, "price": 30}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "mobility-scooter-foldable",
+    "name": "Foldable mobility scooter",
+    "category": "mobility-scooters",
+    "summary": "Compact electric scooter for malls, airports and outdoor use.",
+    "features": ["Folds for transport", "Charger included", "Delivered charged"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 40}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "hospital-bed-electric",
+    "name": "Electric hospital bed",
+    "category": "hospital-beds",
+    "summary": "Electric home care bed with side rails, delivered, assembled and collected.",
+    "features": ["Electric height and backrest", "Side rails", "Assembled at delivery"],
+    "variants": [{"id": "home", "label": "Home care frame"}, {"id": "icu", "label": "ICU style frame"}],
+    "rent": {"periods": [{"days": 14, "price": 630}, {"days": 30, "price": 945}, {"days": 60, "price": 1470}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "patient-lifter-135",
+    "name": "Mobile patient lifter, 135 kg",
+    "category": "patient-lifters",
+    "summary": "Hoist for safe transfers between bed, chair and toilet.",
+    "features": ["Up to 135 kg", "Sling included", "Shown to the carer at delivery"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 7, "price": 600}, {"days": 14, "price": 800}, {"days": 30, "price": 1200}, {"days": 60, "price": 1650}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "shower-commode-chair",
+    "name": "Shower commode chair",
+    "category": "commode-chairs",
+    "summary": "Lightweight chair for showering and toilet use.",
+    "features": ["Waterproof frame", "Removable bucket", "Armrests"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 7, "price": 200}, {"days": 14, "price": 250}, {"days": 30, "price": 350}, {"days": 60, "price": 450}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "walker-foldable",
+    "name": "Foldable walker",
+    "category": "walkers",
+    "summary": "Height adjustable aluminium walker.",
+    "features": ["Folds flat", "Height adjustable", "With or without front wheels"],
+    "variants": [{"id": "no-wheels", "label": "Without wheels"}, {"id": "wheels", "label": "With front wheels"}],
+    "rent": {"periods": [{"days": 7, "price": 25}, {"days": 30, "price": 75}, {"days": 60, "price": 100}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "rollator-foldable",
+    "name": "Foldable rollator with seat",
+    "category": "walkers",
+    "summary": "Four wheel rollator with seat and brakes for walking outdoors.",
+    "features": ["Seat for resting", "Hand brakes", "Folds for the car"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 40}, {"days": 7, "price": 75}, {"days": 30, "price": 225}, {"days": 60, "price": 350}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "crutches-underarm",
+    "name": "Underarm crutches, pair",
+    "category": "crutches",
+    "summary": "Height adjustable aluminium underarm crutches.",
+    "features": ["Pair", "Height adjustable", "Padded tops"],
+    "variants": [{"id": "m", "label": "Medium"}, {"id": "l", "label": "Large"}],
+    "rent": {"periods": [{"days": 7, "price": 25}, {"days": 30, "price": 75}, {"days": 60, "price": 100}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "crutches-forearm",
+    "name": "Forearm crutches, pair",
+    "category": "crutches",
+    "summary": "Lightweight elbow crutches.",
+    "features": ["Pair", "Height adjustable", "Ergonomic handles"],
+    "variants": [{"id": "m", "label": "Medium"}, {"id": "l", "label": "Large"}],
+    "rent": {"periods": [{"days": 7, "price": 25}, {"days": 30, "price": 75}, {"days": 60, "price": 100}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "knee-scooter",
+    "name": "Foldable knee scooter",
+    "category": "knee-scooters",
+    "summary": "Knee walker for foot and ankle injuries.",
+    "features": ["Padded knee rest", "Steering and brake", "Folds for the car"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 35}, {"days": 7, "price": 150}, {"days": 14, "price": 250}, {"days": 30, "price": 300}, {"days": 60, "price": 450}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "stair-climber-powered",
+    "name": "Powered stair climber",
+    "category": "stair-climbers",
+    "summary": "Moves a seated person up and down stairs with one carer.",
+    "features": ["Battery powered", "Carer operated", "Training at delivery"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 100}, {"days": 7, "price": 600}, {"days": 14, "price": 1000}, {"days": 30, "price": 1400}, {"days": 60, "price": 2400}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "oxygen-concentrator",
+    "name": "Home oxygen concentrator",
+    "category": "oxygen",
+    "summary": "Stationary concentrator for home oxygen therapy, set to your prescribed flow.",
+    "features": ["5 or 10 litres per minute", "Nasal cannula included", "Prescription required"],
+    "variants": [
+      {"id": "5l", "label": "5 litres", "periods": [{"days": 7, "price": 400}, {"days": 14, "price": 450}, {"days": 30, "price": 550}, {"days": 60, "price": 800}]},
+      {"id": "10l", "label": "10 litres", "periods": [{"days": 7, "price": 500}, {"days": 14, "price": 650}, {"days": 30, "price": 900}, {"days": 60, "price": 1200}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "oxygen-cylinder",
+    "name": "Portable oxygen cylinder",
+    "category": "oxygen",
+    "summary": "Aluminium cylinder with regulator for travel and backup.",
+    "features": ["Regulator included", "4.5 or 10 litre cylinder", "Prescription required"],
+    "variants": [
+      {"id": "4-5l", "label": "4.5 litre", "periods": [{"days": 30, "price": 367.5}, {"days": 60, "price": 630}]},
+      {"id": "10l", "label": "10 litre", "periods": [{"days": 30, "price": 496.13}, {"days": 60, "price": 787.5}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "auto-cpap",
+    "name": "Auto CPAP with humidifier",
+    "category": "sleep-therapy",
+    "summary": "Automatic CPAP for sleep apnoea, set to your sleep study prescription.",
+    "features": ["Heated humidifier", "With or without a new mask", "Prescription required"],
+    "variants": [
+      {"id": "no-mask", "label": "Without mask", "periods": [{"days": 14, "price": 600}, {"days": 30, "price": 950}, {"days": 60, "price": 1200}]},
+      {"id": "mask", "label": "With new mask", "periods": [{"days": 14, "price": 900}, {"days": 30, "price": 1100}, {"days": 60, "price": 1500}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "auto-bipap",
+    "name": "Auto BiPAP with humidifier",
+    "category": "sleep-therapy",
+    "summary": "Bilevel machine for patients who need two pressure levels.",
+    "features": ["Heated humidifier", "With or without a new mask", "Prescription required"],
+    "variants": [
+      {"id": "no-mask", "label": "Without mask", "periods": [{"days": 14, "price": 800}, {"days": 30, "price": 1000}, {"days": 60, "price": 1400}]},
+      {"id": "mask", "label": "With new mask", "periods": [{"days": 14, "price": 1000}, {"days": 30, "price": 1100}, {"days": 60, "price": 1400}]}
+    ],
+    "rent": {},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "dvt-pump",
+    "name": "DVT compression pump",
+    "category": "clinical-pumps",
+    "summary": "Intermittent compression to help prevent blood clots after surgery.",
+    "features": ["Leg garments included", "Used as prescribed", "Shown at delivery"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 100}, {"days": 7, "price": 500}, {"days": 30, "price": 1200}, {"days": 60, "price": 1800}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "enteral-feeding-pump",
+    "name": "Enteral feeding pump",
+    "category": "clinical-pumps",
+    "summary": "Feeding pump for home enteral nutrition after hospital discharge.",
+    "features": ["Monthly rental", "Consumables not included", "Prescription required"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 30, "price": 680}, {"days": 60, "price": 945}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "portable-ventilator",
+    "name": "Portable home ventilator",
+    "category": "ventilators",
+    "summary": "Portable ventilator for home use, supplied with clinical handover.",
+    "features": ["Monthly rental", "Prescription and clinical handover required", "Internal battery"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 30, "price": 1600}, {"days": 60, "price": 2400}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "special-needs-stroller",
+    "name": "Special needs stroller",
+    "category": "paediatric",
+    "summary": "Supportive folding stroller for children with special needs.",
+    "features": ["Supportive seat", "Folds for the car", "Harness"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 36.75}, {"days": 7, "price": 157.5}, {"days": 30, "price": 367.5}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "overbed-table",
+    "name": "Overbed table",
+    "category": "bed-accessories",
+    "summary": "Height adjustable table that rolls over the bed for meals and reading.",
+    "features": ["Height adjustable", "Lockable wheels"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 14, "price": 150}, {"days": 30, "price": 200}, {"days": 60, "price": 250}]},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "iv-pole",
+    "name": "IV pole on wheels",
+    "category": "bed-accessories",
+    "summary": "Height adjustable drip stand on wheels.",
+    "features": ["Height adjustable", "Wheeled base"],
+    "variants": [{"id": "std", "label": "Standard"}],
+    "rent": {"periods": [{"days": 1, "price": 26.25}]},
+    "price_source": "market-2026-10-18"
+  },
+
+  {
+    "slug": "buy-electric-bed-5-function",
+    "name": "5 function electric hospital bed with mattress",
+    "category": "buy-hospital-beds",
+    "summary": "Electric home care bed with height, backrest and knee adjustment, mattress included.",
+    "features": ["5 electric functions", "Side rails", "Mattress included"],
+    "sale": {"price": 4980},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-electric-bed-premium",
+    "name": "Premium fully electric bed, 5 function",
+    "category": "buy-hospital-beds",
+    "summary": "Fully electric bed for long term home care.",
+    "features": ["Fully electric", "5 functions", "Side rails"],
+    "sale": {"price": 8968},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-overbed-table",
+    "name": "Tiltable overbed table",
+    "category": "buy-hospital-beds",
+    "summary": "Height adjustable overbed table with tilting top.",
+    "features": ["Tilting top", "Height adjustable", "Wheels"],
+    "sale": {"price": 249},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-air-mattress-overlay",
+    "name": "Alternating air mattress overlay",
+    "category": "buy-pressure-mattresses",
+    "summary": "Overlay with pump that alternates pressure to help prevent bed sores.",
+    "features": ["Placed on top of the existing mattress", "Quiet pump"],
+    "sale": {"price": 1015},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-air-mattress-auto",
+    "name": "Automatic alternating air mattress",
+    "category": "buy-pressure-mattresses",
+    "summary": "Full replacement air mattress with automatic pressure setting.",
+    "features": ["Replaces the bed mattress", "Automatic pressure"],
+    "sale": {"price": 5030},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-bubble-overlay",
+    "name": "Air bubble mattress overlay",
+    "category": "buy-pressure-mattresses",
+    "summary": "Entry level bubble overlay with pump.",
+    "features": ["Bubble cell overlay", "Pump included"],
+    "sale": {"price": 492},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-patient-lifter-150",
+    "name": "Mobile patient lifter, 150 kg",
+    "category": "buy-patient-lifters",
+    "summary": "Electric mobile hoist for carers at home.",
+    "features": ["Up to 150 kg", "Electric lift"],
+    "sale": {"price": 4689},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-wheelchair-steel",
+    "name": "Steel frame wheelchair",
+    "category": "buy-wheelchairs",
+    "summary": "Durable folding wheelchair for daily use.",
+    "features": ["Steel frame", "Folding"],
+    "sale": {"price": 735},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-power-wheelchair-lightweight",
+    "name": "Lightweight foldable power wheelchair, 18 inch",
+    "category": "buy-power-wheelchairs",
+    "summary": "Folding electric wheelchair for travel.",
+    "features": ["18 inch seat", "Folding", "Joystick"],
+    "sale": {"price": 6300},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-knee-scooter",
+    "name": "Folding knee scooter",
+    "category": "buy-walking-aids",
+    "summary": "Knee walker to keep weight off an injured foot.",
+    "features": ["Folding", "Hand brake"],
+    "sale": {"price": 630},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-shower-commode-premium",
+    "name": "Premium shower commode chair",
+    "category": "buy-bathroom-safety",
+    "summary": "Shower and toilet chair for daily care.",
+    "features": ["Shower and toilet use", "Armrests"],
+    "sale": {"price": 1949},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-shower-chair-arms",
+    "name": "Shower chair with arms",
+    "category": "buy-bathroom-safety",
+    "summary": "Height adjustable shower chair with armrests.",
+    "features": ["Armrests", "Height adjustable"],
+    "sale": {"price": 220},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-toilet-grab-bar",
+    "name": "U shaped toilet grab bar",
+    "category": "buy-bathroom-safety",
+    "summary": "Wall mounted support bar beside the toilet.",
+    "features": ["Wall mounted"],
+    "sale": {"price": 300},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-shower-stool",
+    "name": "Shower stool",
+    "category": "buy-bathroom-safety",
+    "summary": "Compact stool for sitting in the shower.",
+    "features": ["Non slip feet", "Height adjustable"],
+    "sale": {"price": 126},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-commode-foldable",
+    "name": "Foldable commode chair",
+    "category": "buy-bathroom-safety",
+    "summary": "Folding bedside commode with armrests.",
+    "features": ["Folding", "Armrests"],
+    "sale": {"price": 84},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-oxygen-concentrator-5l",
+    "name": "Compact oxygen concentrator, 5 litres",
+    "category": "buy-oxygen",
+    "summary": "Stationary home concentrator up to 5 litres per minute.",
+    "features": ["Up to 5 L per minute", "Prescription required"],
+    "sale": {"price": 3300},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-auto-cpap",
+    "name": "Auto CPAP with humidifier",
+    "category": "buy-sleep-therapy",
+    "summary": "Automatic CPAP with heated humidifier.",
+    "features": ["Heated humidifier", "Prescription required"],
+    "sale": {"price": 3890},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-travel-cpap",
+    "name": "Portable travel auto CPAP",
+    "category": "buy-sleep-therapy",
+    "summary": "Small auto CPAP for travel.",
+    "features": ["Travel size", "Prescription required"],
+    "sale": {"price": 4400},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-cpm-knee",
+    "name": "Knee CPM machine",
+    "category": "buy-cpm",
+    "summary": "Lower limb CPM machine for clinics and long term home use.",
+    "features": ["Knee and hip", "Programmable range and speed"],
+    "sale": {"price": 6300},
+    "price_source": "market-2026-10-18"
+  },
+  {
+    "slug": "buy-cold-therapy-knee",
+    "name": "Cold therapy knee wrap",
+    "category": "buy-recovery",
+    "summary": "Reusable cold wrap for swelling after knee surgery.",
+    "features": ["Reusable", "Adjustable straps"],
+    "sale": {"price": 126},
+    "price_source": "market-2026-10-18"
+  }
+]
