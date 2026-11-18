@@ -3023,6 +3023,11 @@
   }
 
   /* ─── LIGHT THEME TUNING (buttons, cards) ─── */
+  .hero-photo { display: none; }
+  @media (max-width: 1024px) {
+    .hero-photo { display: block; width: 100%; height: auto; margin-top: 28px; border-radius: 14px; background: #fff; box-shadow: 0 1px 3px rgba(19,49,73,0.08); }
+  }
+
   .btn-primary, .plan-cta-gold, .btn-nav-book, .nav-cta { background: #1d6f8c !important; color: #fff !important; box-shadow: 0 2px 8px rgba(19,49,73,0.12) !important; }
   .btn-primary:hover, .plan-cta-gold:hover, .btn-nav-book:hover, .nav-cta:hover { background: #15536b !important; box-shadow: 0 6px 16px rgba(19,49,73,0.16) !important; }
   .btn-primary::after, .plan-cta-gold::after, .btn-nav-book::after { animation: none; }
@@ -3375,6 +3380,7 @@
           <span data-ar>عرض الباقات ↓</span>
         </a>
       </div>
+      <img class="hero-photo" src="images/cpm-knee-machine.webp" width="960" height="411" alt="CPM knee machine for passive knee motion after surgery" fetchpriority="high" decoding="async">
     </div>
 
     <div class="hero-stats" aria-label="Key statistics">
