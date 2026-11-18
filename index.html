@@ -45,7 +45,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="theme-color" content="#C9A84C">
+<meta name="theme-color" content="#3192b8">
 
 <!-- ══════════════════════════════════════════════════
      ANALYTICS
@@ -266,15 +266,15 @@
 <style>
 /* ─── DESIGN TOKENS ─── */
   :root {
-    --gold: #C9A84C;
-    --gold-light: #E8D08A;
-    --gold-dim: #8A6F32;
-    --cream: #FAF7F2;
-    --dark: #0E0E0E;
-    --dark-mid: #1A1A1A;
-    --dark-card: #161616;
-    --text-muted: #888;
-    --white: #FFFFFF;
+    --gold: #3192b8;
+    --gold-light: #1d586f;
+    --gold-dim: #66b6d6;
+    --cream: #1d566d;
+    --dark: #eff4f8;
+    --dark-mid: #f9fbfc;
+    --dark-card: #f6f9fb;
+    --text-muted: #627b8c;
+    --white: #133149;
     --wa-green: #25D366;
   }
 
@@ -322,9 +322,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 14px 48px;
-    background: rgba(14,14,14,0.92);
+    background: rgba(239,244,248,0.92);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(49,146,184,0.15);
   }
 
   .logo {
@@ -341,7 +341,7 @@
   .lang-toggle {
     display: flex;
     gap: 6px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(19,49,73,0.05);
     border-radius: 30px;
     padding: 4px;
   }
@@ -380,9 +380,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 70% 40%, rgba(201,168,76,0.12) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201,168,76,0.06) 0%, transparent 60%),
-      linear-gradient(180deg, #0E0E0E 0%, #111008 100%);
+      radial-gradient(ellipse 60% 50% at 70% 40%, rgba(49,146,184,0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(49,146,184,0.06) 0%, transparent 60%),
+      linear-gradient(180deg, #eff4f8 0%, #eef3f7 100%);
     pointer-events: none;
   }
 
@@ -390,8 +390,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(49,146,184,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49,146,184,0.04) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
     pointer-events: none;
@@ -416,7 +416,7 @@
     align-items: center;
     gap: 8px;
     padding: 6px 16px;
-    border: 1px solid rgba(201,168,76,0.4);
+    border: 1px solid rgba(49,146,184,0.4);
     border-radius: 30px;
     font-size: 0.75rem;
     letter-spacing: 0.14em;
@@ -452,7 +452,7 @@
 
   .hero-sub {
     font-size: 1rem;
-    color: #aaa;
+    color: #465864;
     line-height: 1.7;
     margin-bottom: 40px;
     max-width: 420px;
@@ -477,7 +477,7 @@
   }
   .hero-stars-label {
     font-size: 0.82rem;
-    color: #999;
+    color: #546978;
   }
   .hero-stars-label strong { color: var(--white); }
 
@@ -500,20 +500,20 @@
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s;
-    box-shadow: 0 8px 30px rgba(201,168,76,0.25);
+    box-shadow: 0 8px 30px rgba(49,146,184,0.25);
     position: relative;
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 14px 40px rgba(201,168,76,0.4);
+    box-shadow: 0 14px 40px rgba(49,146,184,0.4);
   }
 
   /* ─── PULSE RING ANIMATION ─── */
   @keyframes btn-ring-pulse {
-    0%   { box-shadow: 0 0 0 0 rgba(201,168,76,0.5); }
-    70%  { box-shadow: 0 0 0 14px rgba(201,168,76,0); }
-    100% { box-shadow: 0 0 0 0 rgba(201,168,76,0); }
+    0%   { box-shadow: 0 0 0 0 rgba(49,146,184,0.5); }
+    70%  { box-shadow: 0 0 0 14px rgba(49,146,184,0); }
+    100% { box-shadow: 0 0 0 0 rgba(49,146,184,0); }
   }
 
   .btn-primary::after,
@@ -538,7 +538,7 @@
     align-items: center;
     gap: 10px;
     padding: 16px 32px;
-    border: 1px solid rgba(201,168,76,0.5);
+    border: 1px solid rgba(49,146,184,0.5);
     color: var(--gold-light);
     font-family: 'Jost', sans-serif;
     font-size: 0.9rem;
@@ -549,7 +549,7 @@
   }
 
   .btn-outline:hover {
-    background: rgba(201,168,76,0.08);
+    background: rgba(49,146,184,0.08);
     border-color: var(--gold);
   }
 
@@ -561,8 +561,8 @@
   }
 
   .stat-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(201,168,76,0.12);
+    background: rgba(19,49,73,0.03);
+    border: 1px solid rgba(49,146,184,0.12);
     border-radius: 12px;
     padding: 28px 32px;
     position: relative;
@@ -570,7 +570,7 @@
     transition: border-color 0.3s;
   }
 
-  .stat-card:hover { border-color: rgba(201,168,76,0.35); }
+  .stat-card:hover { border-color: rgba(49,146,184,0.35); }
 
   .stat-card::before {
     content: '';
@@ -623,14 +623,14 @@
 
   .section-sub {
     font-size: 1rem;
-    color: #999;
+    color: #546978;
     line-height: 1.7;
     max-width: 560px;
   }
 
   /* ─── HOW IT WORKS ─── */
   .how {
-    background: linear-gradient(180deg, #0E0E0E 0%, #0A0A08 100%);
+    background: linear-gradient(180deg, #eff4f8 0%, #ebf1f6 100%);
   }
 
   .how-inner { max-width: 1100px; margin: 0 auto; }
@@ -659,7 +659,7 @@
   .step {
     padding: 48px 36px;
     background: var(--dark-card);
-    border: 1px solid rgba(255,255,255,0.04);
+    border: 1px solid rgba(19,49,73,0.04);
     text-align: center;
     position: relative;
     transition: border-color 0.3s;
@@ -667,7 +667,7 @@
 
   .step:first-child { border-radius: 16px 0 0 16px; }
   .step:last-child { border-radius: 0 16px 16px 0; }
-  .step:hover { border-color: rgba(201,168,76,0.2); }
+  .step:hover { border-color: rgba(49,146,184,0.2); }
 
   html[lang="ar"] .step:first-child { border-radius: 0 16px 16px 0; }
   html[lang="ar"] .step:last-child { border-radius: 16px 0 0 16px; }
@@ -675,8 +675,8 @@
   .step-num {
     width: 56px; height: 56px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(201,168,76,0.2), rgba(201,168,76,0.05));
-    border: 1px solid rgba(201,168,76,0.4);
+    background: linear-gradient(135deg, rgba(49,146,184,0.2), rgba(49,146,184,0.05));
+    border: 1px solid rgba(49,146,184,0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -687,7 +687,7 @@
   }
 
   .step h3 { font-size: 1.1rem; font-weight: 500; margin-bottom: 10px; letter-spacing: 0.02em; }
-  .step p { font-size: 0.9rem; color: #888; line-height: 1.65; }
+  .step p { font-size: 0.9rem; color: #627b8c; line-height: 1.65; }
 
   /* ─── PRICING ─── */
   .pricing { background: var(--dark); }
@@ -704,19 +704,19 @@
   .plan {
     border-radius: 16px;
     padding: 44px 36px;
-    border: 1px solid rgba(255,255,255,0.07);
+    border: 1px solid rgba(19,49,73,0.07);
     background: var(--dark-card);
     transition: all 0.4s;
     position: relative;
     overflow: hidden;
   }
 
-  .plan:hover { transform: translateY(-4px); border-color: rgba(201,168,76,0.25); }
+  .plan:hover { transform: translateY(-4px); border-color: rgba(49,146,184,0.25); }
 
   .plan.featured {
-    background: linear-gradient(145deg, #1A1505, #0E0E0E);
-    border-color: rgba(201,168,76,0.45);
-    box-shadow: 0 0 60px rgba(201,168,76,0.1);
+    background: linear-gradient(145deg, #f1f5f8, #eff4f8);
+    border-color: rgba(49,146,184,0.45);
+    box-shadow: 0 0 60px rgba(49,146,184,0.1);
     padding-top: 52px;
   }
 
@@ -756,11 +756,11 @@
 
   .plan-price .suffix {
     font-size: 1.1rem;
-    color: #777;
+    color: #738c9d;
     font-family: 'Jost', sans-serif;
   }
 
-  .plan-desc { font-size: 0.85rem; color: #777; margin: 8px 0 28px; }
+  .plan-desc { font-size: 0.85rem; color: #738c9d; margin: 8px 0 28px; }
 
   .plan-features { list-style: none; margin-bottom: 36px; }
 
@@ -769,9 +769,9 @@
     align-items: center;
     gap: 10px;
     font-size: 0.88rem;
-    color: #aaa;
+    color: #465864;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(19,49,73,0.05);
   }
 
   .plan-features li::before {
@@ -797,23 +797,23 @@
   }
 
   .plan-cta-outline {
-    border: 1px solid rgba(201,168,76,0.4);
+    border: 1px solid rgba(49,146,184,0.4);
     color: var(--gold);
   }
 
-  .plan-cta-outline:hover { background: rgba(201,168,76,0.08); }
+  .plan-cta-outline:hover { background: rgba(49,146,184,0.08); }
 
   .plan-cta-gold {
     background: linear-gradient(135deg, var(--gold), var(--gold-dim));
     color: var(--dark);
-    box-shadow: 0 6px 24px rgba(201,168,76,0.25);
+    box-shadow: 0 6px 24px rgba(49,146,184,0.25);
     position: relative;
   }
 
-  .plan-cta-gold:hover { box-shadow: 0 10px 36px rgba(201,168,76,0.4); }
+  .plan-cta-gold:hover { box-shadow: 0 10px 36px rgba(49,146,184,0.4); }
 
   /* ─── TESTIMONIALS ─── */
-  .testimonials { background: linear-gradient(180deg, #0A0A08, #0E0E0E); }
+  .testimonials { background: linear-gradient(180deg, #ebf1f6, #eff4f8); }
 
   .test-inner { max-width: 1100px; margin: 0 auto; }
   .test-header { text-align: center; margin-bottom: 64px; }
@@ -835,7 +835,7 @@
 
   .test-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(19,49,73,0.06);
     border-radius: 14px;
     padding: 36px 32px;
     transition: border-color 0.3s;
@@ -843,7 +843,7 @@
     min-width: 100%;
   }
 
-  .test-card:hover { border-color: rgba(201,168,76,0.2); }
+  .test-card:hover { border-color: rgba(49,146,184,0.2); }
 
   .carousel-nav {
     position: absolute;
@@ -859,7 +859,7 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(19,49,73,0.3);
     border: none;
     cursor: pointer;
     transition: all 0.3s;
@@ -878,7 +878,7 @@
     width: 40px;
     height: 40px;
     border: none;
-    background: rgba(201, 168, 76, 0.15);
+    background: rgba(49,146,184,0.15);
     color: var(--gold);
     font-size: 1.2rem;
     cursor: pointer;
@@ -891,7 +891,7 @@
   }
 
   .carousel-arrow:hover {
-    background: rgba(201, 168, 76, 0.3);
+    background: rgba(49,146,184,0.3);
   }
 
   .carousel-prev {
@@ -907,7 +907,7 @@
 
   .test-stars { color: var(--gold); font-size: 1rem; letter-spacing: 3px; margin-bottom: 18px; }
 
-  .test-text { font-size: 0.93rem; color: #bbb; line-height: 1.72; margin-bottom: 24px; font-style: italic; }
+  .test-text { font-size: 0.93rem; color: #384650; line-height: 1.72; margin-bottom: 24px; font-style: italic; }
 
   .test-author { display: flex; align-items: center; gap: 12px; }
 
@@ -919,20 +919,20 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 0.78rem; font-weight: 700; letter-spacing: 0.05em;
     color: var(--gold);
-    background: linear-gradient(135deg, rgba(201,168,76,0.18), rgba(201,168,76,0.04));
-    border: 1px solid rgba(201,168,76,0.35);
+    background: linear-gradient(135deg, rgba(49,146,184,0.18), rgba(49,146,184,0.04));
+    border: 1px solid rgba(49,146,184,0.35);
     flex-shrink: 0;
   }
 
   .test-name { font-size: 0.88rem; font-weight: 500; }
-  .test-loc { font-size: 0.78rem; color: #666; }
+  .test-loc { font-size: 0.78rem; color: #879cab; }
 
   /* ─── FAQ ─── */
   .faq { background: var(--dark); }
   .faq-inner { max-width: 800px; margin: 0 auto; }
   .faq-header { text-align: center; margin-bottom: 56px; }
 
-  .faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .faq-item { border-bottom: 1px solid rgba(19,49,73,0.07); }
 
   .faq-q {
     width: 100%;
@@ -960,7 +960,7 @@
   .faq-icon {
     width: 28px; height: 28px;
     border-radius: 50%;
-    border: 1px solid rgba(201,168,76,0.3);
+    border: 1px solid rgba(49,146,184,0.3);
     display: flex; align-items: center; justify-content: center;
     color: var(--gold);
     font-size: 1.2rem;
@@ -976,7 +976,7 @@
 
   .faq-a {
     font-size: 0.92rem;
-    color: #888;
+    color: #627b8c;
     line-height: 1.75;
     max-height: 0;
     overflow: hidden;
@@ -1049,8 +1049,8 @@
   footer {
     padding: 48px;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    color: #555;
+    border-top: 1px solid rgba(19,49,73,0.06);
+    color: #9badb9;
     font-size: 0.82rem;
     letter-spacing: 0.05em;
   }
@@ -1105,16 +1105,16 @@
   ═══════════════════════════════════════ */
 /* ─── TOKENS (same as landing) ─── */
   :root {
-    --gold: #C9A84C;
-    --gold-light: #E8D08A;
-    --gold-dim: #8A6F32;
-    --dark: #0E0E0E;
-    --dark-mid: #1A1A1A;
-    --dark-card: #161616;
-    --dark-card2: #131313;
-    --text-muted: #888;
-    --text-body: #C0BAB0;
-    --white: #FFFFFF;
+    --gold: #3192b8;
+    --gold-light: #1d586f;
+    --gold-dim: #66b6d6;
+    --dark: #eff4f8;
+    --dark-mid: #f9fbfc;
+    --dark-card: #f6f9fb;
+    --dark-card2: #f4f7f9;
+    --text-muted: #627b8c;
+    --text-body: #3a4954;
+    --white: #133149;
     --wa-green: #25D366;
   }
 
@@ -1129,9 +1129,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 14px 48px;
-    background: rgba(14,14,14,0.94);
+    background: rgba(239,244,248,0.94);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(49,146,184,0.15);
   }
 
   .logo {
@@ -1172,11 +1172,11 @@
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s;
-    box-shadow: 0 4px 16px rgba(201,168,76,0.2);
+    box-shadow: 0 4px 16px rgba(49,146,184,0.2);
   }
 
   .nav-cta:hover {
-    box-shadow: 0 8px 28px rgba(201,168,76,0.4);
+    box-shadow: 0 8px 28px rgba(49,146,184,0.4);
     transform: translateY(-1px);
   }
 
@@ -1192,8 +1192,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 70% 60% at 50% 20%, rgba(201,168,76,0.09) 0%, transparent 70%),
-      linear-gradient(180deg, #0E0E0E 0%, #0A0A07 100%);
+      radial-gradient(ellipse 70% 60% at 50% 20%, rgba(49,146,184,0.09) 0%, transparent 70%),
+      linear-gradient(180deg, #eff4f8 0%, #ebf1f5 100%);
     pointer-events: none;
   }
 
@@ -1201,8 +1201,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+      linear-gradient(rgba(49,146,184,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49,146,184,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 90% 80% at 50% 0%, black 20%, transparent 100%);
     pointer-events: none;
@@ -1229,7 +1229,7 @@
     color: var(--gold);
     margin-bottom: 20px;
     padding: 5px 14px;
-    border: 1px solid rgba(201,168,76,0.3);
+    border: 1px solid rgba(49,146,184,0.3);
     border-radius: 30px;
   }
 
@@ -1246,7 +1246,7 @@
 
   .blog-hero-sub {
     font-size: 1rem;
-    color: #999;
+    color: #546978;
     line-height: 1.72;
     max-width: 520px;
     margin: 0 auto 40px;
@@ -1266,7 +1266,7 @@
   .filter-btn {
     padding: 8px 22px;
     border-radius: 30px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(19,49,73,0.1);
     background: transparent;
     color: var(--text-muted);
     font-family: 'Jost', sans-serif;
@@ -1278,12 +1278,12 @@
   }
 
   .filter-btn:hover {
-    border-color: rgba(201,168,76,0.4);
+    border-color: rgba(49,146,184,0.4);
     color: var(--gold-light);
   }
 
   .filter-btn.active {
-    background: rgba(201,168,76,0.12);
+    background: rgba(49,146,184,0.12);
     border-color: var(--gold);
     color: var(--gold);
   }
@@ -1310,7 +1310,7 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, rgba(201,168,76,0.3), transparent);
+    background: linear-gradient(90deg, rgba(49,146,184,0.3), transparent);
   }
 
   .featured-card {
@@ -1319,18 +1319,18 @@
     gap: 0;
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(201,168,76,0.18);
+    border: 1px solid rgba(49,146,184,0.18);
     background: var(--dark-card);
     transition: border-color 0.4s;
     cursor: pointer;
   }
 
-  .featured-card:hover { border-color: rgba(201,168,76,0.4); }
+  .featured-card:hover { border-color: rgba(49,146,184,0.4); }
 
   .featured-visual {
     background:
-      radial-gradient(ellipse 80% 80% at 30% 40%, rgba(201,168,76,0.15) 0%, transparent 70%),
-      linear-gradient(135deg, #1A1505, #0A0A0A);
+      radial-gradient(ellipse 80% 80% at 30% 40%, rgba(49,146,184,0.15) 0%, transparent 70%),
+      linear-gradient(135deg, #f1f5f8, #ecf2f6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1345,8 +1345,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(201,168,76,0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.06) 1px, transparent 1px);
+      linear-gradient(rgba(49,146,184,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49,146,184,0.06) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 
@@ -1354,7 +1354,7 @@
     font-size: 6rem;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 40px rgba(201,168,76,0.3));
+    filter: drop-shadow(0 0 40px rgba(49,146,184,0.3));
     animation: floatIcon 4s ease-in-out infinite;
   }
 
@@ -1403,7 +1403,7 @@
   .article-read-time::before {
     content: '·';
     margin-right: 16px;
-    color: rgba(201,168,76,0.4);
+    color: rgba(49,146,184,0.4);
   }
 
   .featured-content h2 {
@@ -1462,7 +1462,7 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(255,255,255,0.07);
+    background: rgba(19,49,73,0.07);
   }
 
   .articles-grid {
@@ -1473,7 +1473,7 @@
 
   .article-card {
     border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: 1px solid rgba(19,49,73,0.06);
     background: var(--dark-card);
     overflow: hidden;
     transition: all 0.4s;
@@ -1484,8 +1484,8 @@
 
   .article-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(201,168,76,0.25);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    border-color: rgba(49,146,184,0.25);
+    box-shadow: 0 20px 50px rgba(228,236,242,0.4);
   }
 
   .card-visual {
@@ -1501,28 +1501,28 @@
   .card-visual svg { overflow: visible; }
 
   .card-visual-1 {
-    background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(201,168,76,0.12) 0%, transparent 70%),
-    linear-gradient(135deg, #1a1208, #0a0a0a);
+    background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(49,146,184,0.12) 0%, transparent 70%),
+    linear-gradient(135deg, #f2f6f9, #ecf2f6);
   }
 
   .card-visual-2 {
     background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(76,140,201,0.1) 0%, transparent 70%),
-    linear-gradient(135deg, #081218, #0a0a0a);
+    linear-gradient(135deg, #f1f5f8, #ecf2f6);
   }
 
   .card-visual-3 {
     background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(201,76,76,0.1) 0%, transparent 70%),
-    linear-gradient(135deg, #180808, #0a0a0a);
+    linear-gradient(135deg, #f1f5f8, #ecf2f6);
   }
 
   .card-visual-4 {
     background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(76,201,140,0.1) 0%, transparent 70%),
-    linear-gradient(135deg, #081812, #0a0a0a);
+    linear-gradient(135deg, #f1f5f8, #ecf2f6);
   }
 
   .card-visual-5 {
     background: radial-gradient(ellipse 80% 80% at 50% 50%, rgba(140,76,201,0.1) 0%, transparent 70%),
-    linear-gradient(135deg, #100818, #0a0a0a);
+    linear-gradient(135deg, #f1f5f8, #ecf2f6);
   }
 
   .card-visual::before {
@@ -1530,8 +1530,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(49,146,184,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(49,146,184,0.04) 1px, transparent 1px);
     background-size: 30px 30px;
   }
 
@@ -1539,7 +1539,7 @@
     font-size: 3.2rem;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 20px rgba(201,168,76,0.2));
+    filter: drop-shadow(0 0 20px rgba(49,146,184,0.2));
   }
 
   .card-body {
@@ -1576,19 +1576,19 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 16px;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(19,49,73,0.05);
   }
 
   .card-author {
     font-size: 0.76rem;
-    color: #555;
+    color: #9badb9;
     letter-spacing: 0.05em;
   }
 
   .card-arrow {
     width: 32px; height: 32px;
     border-radius: 50%;
-    border: 1px solid rgba(201,168,76,0.25);
+    border: 1px solid rgba(49,146,184,0.25);
     display: flex; align-items: center; justify-content: center;
     color: var(--gold);
     font-size: 0.9rem;
@@ -1607,7 +1607,7 @@
     position: fixed;
     inset: 0;
     z-index: 2000;
-    background: rgba(0,0,0,0.85);
+    background: rgba(228,236,242,0.85);
     backdrop-filter: blur(8px);
     overflow-y: auto;
     overflow-x: hidden;
@@ -1624,7 +1624,7 @@
     margin: 0 auto;
     background: var(--dark-card);
     border-radius: 20px;
-    border: 1px solid rgba(201,168,76,0.2);
+    border: 1px solid rgba(49,146,184,0.2);
     overflow: visible;
     animation: panelSlide 0.4s ease both;
   }
@@ -1635,11 +1635,11 @@
   }
 
   .panel-header {
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.1) 0%, transparent 70%),
-    linear-gradient(180deg, #1a1208, #161616);
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(49,146,184,0.1) 0%, transparent 70%),
+    linear-gradient(180deg, #f2f6f9, #f6f9fb);
     padding: 48px 56px 40px;
     position: relative;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(19,49,73,0.06);
   }
 
   .panel-close {
@@ -1647,7 +1647,7 @@
     top: 24px; right: 24px;
     width: 40px; height: 40px;
     border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(19,49,73,0.12);
     background: none;
     color: var(--text-muted);
     font-size: 1.1rem;
@@ -1673,7 +1673,7 @@
 
   .panel-header .article-excerpt {
     font-size: 1rem;
-    color: #999;
+    color: #546978;
     line-height: 1.75;
     margin-bottom: 0;
   }
@@ -1690,7 +1690,7 @@
     color: var(--white);
     margin: 40px 0 16px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(201,168,76,0.15);
+    border-bottom: 1px solid rgba(49,146,184,0.15);
   }
 
   .article-content p {
@@ -1712,7 +1712,7 @@
     line-height: 1.7;
     padding: 8px 0 8px 24px;
     position: relative;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(19,49,73,0.04);
   }
 
   .article-content ul li::before {
@@ -1725,8 +1725,8 @@
   .article-content strong { color: var(--gold-light); font-weight: 500; }
 
   .callout {
-    background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03));
-    border: 1px solid rgba(201,168,76,0.2);
+    background: linear-gradient(135deg, rgba(49,146,184,0.08), rgba(49,146,184,0.03));
+    border: 1px solid rgba(49,146,184,0.2);
     border-left: 3px solid var(--gold);
     border-radius: 0 12px 12px 0;
     padding: 20px 24px;
@@ -1749,14 +1749,14 @@
     color: var(--gold);
     white-space: nowrap;
     padding: 16px 0;
-    border-right: 1px solid rgba(201,168,76,0.2);
+    border-right: 1px solid rgba(49,146,184,0.2);
     padding-right: 24px;
     text-align: right;
   }
 
   .timeline-content {
     padding: 16px 0 16px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(19,49,73,0.04);
   }
 
   .timeline-content strong {
@@ -1776,8 +1776,8 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.04));
-    border: 1px solid rgba(201,168,76,0.25);
+    background: linear-gradient(135deg, rgba(49,146,184,0.1), rgba(49,146,184,0.04));
+    border: 1px solid rgba(49,146,184,0.25);
     border-radius: 12px;
     padding: 24px 28px;
     margin-top: 40px;
@@ -1801,11 +1801,11 @@
     border-radius: 4px;
     white-space: nowrap;
     transition: all 0.3s;
-    box-shadow: 0 4px 20px rgba(201,168,76,0.2);
+    box-shadow: 0 4px 20px rgba(49,146,184,0.2);
   }
 
   .panel-cta-btn:hover {
-    box-shadow: 0 8px 30px rgba(201,168,76,0.4);
+    box-shadow: 0 8px 30px rgba(49,146,184,0.4);
     transform: translateY(-1px);
   }
 
@@ -1838,21 +1838,21 @@
   }
   .contact-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255,255,255,0.07);
+    border: 1px solid rgba(19,49,73,0.07);
     border-radius: 12px;
     padding: 28px 24px;
     transition: border-color 0.3s, transform 0.3s;
   }
   .contact-card:hover {
-    border-color: rgba(201,168,76,0.4);
+    border-color: rgba(49,146,184,0.4);
     transform: translateY(-3px);
   }
   .contact-card-icon {
     width: 40px; height: 40px;
     margin-bottom: 14px;
     display: flex; align-items: center; justify-content: center;
-    background: rgba(201,168,76,0.08);
-    border: 1px solid rgba(201,168,76,0.2);
+    background: rgba(49,146,184,0.08);
+    border: 1px solid rgba(49,146,184,0.2);
     border-radius: 10px;
   }
   .contact-card-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; }
@@ -1910,8 +1910,8 @@
   }
 
   .newsletter-inner {
-    background: linear-gradient(135deg, #1A1505, #0E0E0E);
-    border: 1px solid rgba(201,168,76,0.25);
+    background: linear-gradient(135deg, #f1f5f8, #eff4f8);
+    border: 1px solid rgba(49,146,184,0.25);
     border-radius: 20px;
     padding: 64px;
     display: grid;
@@ -1940,8 +1940,8 @@
 
   .newsletter-input {
     flex: 1;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(19,49,73,0.05);
+    border: 1px solid rgba(19,49,73,0.1);
     border-right: none;
     border-radius: 4px 0 0 4px;
     padding: 14px 18px;
@@ -1952,8 +1952,8 @@
     transition: border-color 0.3s;
   }
 
-  .newsletter-input:focus { border-color: rgba(201,168,76,0.4); }
-  .newsletter-input::placeholder { color: #555; }
+  .newsletter-input:focus { border-color: rgba(49,146,184,0.4); }
+  .newsletter-input::placeholder { color: #9badb9; }
 
   .newsletter-btn {
     padding: 14px 24px;
@@ -1970,7 +1970,7 @@
     white-space: nowrap;
   }
 
-  .newsletter-btn:hover { box-shadow: 0 6px 24px rgba(201,168,76,0.35); }
+  .newsletter-btn:hover { box-shadow: 0 6px 24px rgba(49,146,184,0.35); }
 
   /* ─── WHATSAPP FLOAT ─── */
   .wa-float {
@@ -2009,8 +2009,8 @@
   footer {
     padding: 48px;
     text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    color: #555;
+    border-top: 1px solid rgba(19,49,73,0.06);
+    color: #9badb9;
     font-size: 0.82rem;
     letter-spacing: 0.05em;
   }
@@ -2050,11 +2050,11 @@
   html[lang="ar"] .featured-content { direction: rtl; text-align: right; }
   html[lang="ar"] .filter-bar { direction: rtl; }
   html[lang="ar"] .grid-label { direction: rtl; }
-  html[lang="ar"] .grid-label::after { background: rgba(255,255,255,0.07); }
+  html[lang="ar"] .grid-label::after { background: rgba(19,49,73,0.07); }
   html[lang="ar"] .card-body { direction: rtl; text-align: right; }
   html[lang="ar"] .card-footer { flex-direction: row-reverse; }
   html[lang="ar"] .featured-label { direction: rtl; }
-  html[lang="ar"] .featured-label::after { background: linear-gradient(270deg, rgba(201,168,76,0.3), transparent); }
+  html[lang="ar"] .featured-label::after { background: linear-gradient(270deg, rgba(49,146,184,0.3), transparent); }
   html[lang="ar"] .read-more { flex-direction: row-reverse; }
   html[lang="ar"] .article-meta { flex-direction: row-reverse; }
   html[lang="ar"] .newsletter-text { direction: rtl; }
@@ -2068,7 +2068,7 @@
   html[lang="ar"] .article-content ul li::before { left: auto; right: 0; }
   html[lang="ar"] .callout { border-left: none; border-right: 3px solid var(--gold); border-radius: 12px 0 0 12px; text-align: right; }
   html[lang="ar"] .recovery-timeline { direction: rtl; }
-  html[lang="ar"] .timeline-week { text-align: left; border-right: none; border-left: 1px solid rgba(201,168,76,0.2); padding-right: 0; padding-left: 24px; }
+  html[lang="ar"] .timeline-week { text-align: left; border-right: none; border-left: 1px solid rgba(49,146,184,0.2); padding-right: 0; padding-left: 24px; }
   html[lang="ar"] .timeline-content { text-align: right; }
   html[lang="ar"] .panel-cta { flex-direction: row-reverse; direction: rtl; }
   html[lang="ar"] .faq-q { text-align: right; }
@@ -2087,7 +2087,7 @@
   }
 
   /* Nav active state */
-  .nav-link { color: #888; }
+  .nav-link { color: #627b8c; }
   .nav-link.active { color: var(--gold-light) !important; }
 
   /* Mobile nav page buttons (hidden on desktop) */
@@ -2097,9 +2097,9 @@
   .mobile-nav-btn {
     padding: 6px 12px;
     border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(19,49,73,0.1);
     background: transparent;
-    color: #888;
+    color: #627b8c;
     font-family: 'Jost', sans-serif;
     font-size: 0.72rem;
     letter-spacing: 0.08em;
@@ -2109,7 +2109,7 @@
     text-decoration: none;
   }
   .mobile-nav-btn.active {
-    background: rgba(201,168,76,0.12);
+    background: rgba(49,146,184,0.12);
     border-color: var(--gold);
     color: var(--gold);
   }
@@ -2212,7 +2212,7 @@
     /* ── Newsletter ── */
     .newsletter-inner { padding: 28px 20px; }
     .newsletter-form  { flex-direction: column; gap: 8px; }
-    .newsletter-input { border-radius: 4px; border-right: 1px solid rgba(255,255,255,0.1); }
+    .newsletter-input { border-radius: 4px; border-right: 1px solid rgba(19,49,73,0.1); }
     .newsletter-btn   { border-radius: 4px; padding: 12px; }
 
     /* ── Article panels ── */
@@ -2263,7 +2263,7 @@
 
     /* Recovery timeline stacked */
     .recovery-timeline { grid-template-columns: 1fr; }
-    .timeline-week  { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); padding-right: 0; padding-bottom: 4px; text-align: left; font-size: 0.85rem; }
+    .timeline-week  { border-right: none; border-bottom: 1px solid rgba(49,146,184,0.2); padding-right: 0; padding-bottom: 4px; text-align: left; font-size: 0.85rem; }
     html[lang="ar"] .timeline-week { border-left: none; text-align: right; }
     .timeline-content { padding-top: 8px; }
 
@@ -2282,7 +2282,7 @@
     position: fixed;
     inset: 0;
     z-index: 3000;
-    background: rgba(0,0,0,0.88);
+    background: rgba(228,236,242,0.88);
     backdrop-filter: blur(10px);
     overflow-y: auto;
     padding: 24px 16px 48px;
@@ -2293,8 +2293,8 @@
     max-width: 560px;
     width: 100%;
     margin: 0 auto;
-    background: #141414;
-    border: 1px solid rgba(201,168,76,0.25);
+    background: #f4f8fa;
+    border: 1px solid rgba(49,146,184,0.25);
     border-radius: 20px;
     overflow: hidden;
     animation: modalSlide 0.38s ease both;
@@ -2305,10 +2305,10 @@
   }
 
   .booking-header {
-    background: linear-gradient(135deg, #1a1208, #111);
+    background: linear-gradient(135deg, #f2f6f9, #f2f6f9);
     padding: 32px 36px 28px;
     position: relative;
-    border-bottom: 1px solid rgba(201,168,76,0.12);
+    border-bottom: 1px solid rgba(49,146,184,0.12);
   }
   .booking-header-eyebrow {
     font-size: 0.68rem;
@@ -2327,7 +2327,7 @@
   .booking-header h3 em { font-style: italic; color: var(--gold); }
   .booking-header p {
     font-size: 0.84rem;
-    color: #888;
+    color: #627b8c;
     margin-top: 8px;
     line-height: 1.6;
   }
@@ -2336,9 +2336,9 @@
     top: 18px; right: 18px;
     width: 36px; height: 36px;
     border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(19,49,73,0.1);
     background: none;
-    color: #666;
+    color: #879cab;
     font-size: 1rem;
     cursor: pointer;
     display: flex; align-items: center; justify-content: center;
@@ -2357,9 +2357,9 @@
   .plan-pill {
     padding: 10px 8px;
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(19,49,73,0.1);
     background: transparent;
-    color: #888;
+    color: #627b8c;
     font-family: 'Jost', sans-serif;
     font-size: 0.78rem;
     letter-spacing: 0.05em;
@@ -2368,9 +2368,9 @@
     text-align: center;
     line-height: 1.3;
   }
-  .plan-pill:hover { border-color: rgba(201,168,76,0.4); color: var(--gold-light); }
+  .plan-pill:hover { border-color: rgba(49,146,184,0.4); color: var(--gold-light); }
   .plan-pill.selected {
-    background: rgba(201,168,76,0.14);
+    background: rgba(49,146,184,0.14);
     border-color: var(--gold);
     color: var(--gold);
     font-weight: 600;
@@ -2391,14 +2391,14 @@
     font-size: 0.74rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #666;
+    color: #879cab;
     margin-bottom: 7px;
   }
   .booking-field label span { color: var(--gold); }
   .booking-input, .booking-select {
     width: 100%;
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(19,49,73,0.04);
+    border: 1px solid rgba(19,49,73,0.1);
     border-radius: 6px;
     padding: 12px 14px;
     color: var(--white);
@@ -2410,8 +2410,8 @@
     -webkit-appearance: none;
   }
   .booking-input:focus, .booking-select:focus {
-    border-color: rgba(201,168,76,0.5);
-    background: rgba(201,168,76,0.04);
+    border-color: rgba(49,146,184,0.5);
+    background: rgba(49,146,184,0.04);
   }
   .booking-input.field-error, .booking-select.field-error {
     border-color: rgba(220,60,60,0.7) !important;
@@ -2441,8 +2441,8 @@
     display: none;
   }
   #bk-form-error.visible { display: block; }
-  .booking-input::placeholder { color: #444; }
-  .booking-select option { background: #1a1a1a; color: #fff; }
+  .booking-input::placeholder { color: #afbdc7; }
+  .booking-select option { background: #f9fbfc; color: #133149; }
 
   .booking-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 
@@ -2454,25 +2454,25 @@
 
   .booking-field-note {
     font-size: 0.75rem;
-    color: #555;
+    color: #9badb9;
     margin-top: 5px;
     line-height: 1.5;
   }
 
   .booking-divider {
     height: 1px;
-    background: rgba(255,255,255,0.05);
+    background: rgba(19,49,73,0.05);
     margin: 20px 0;
   }
 
   .booking-preview {
-    background: rgba(201,168,76,0.06);
-    border: 1px solid rgba(201,168,76,0.15);
+    background: rgba(49,146,184,0.06);
+    border: 1px solid rgba(49,146,184,0.15);
     border-radius: 8px;
     padding: 14px 16px;
     margin-bottom: 20px;
     font-size: 0.8rem;
-    color: #777;
+    color: #738c9d;
     line-height: 1.65;
     display: none;
   }
@@ -2511,7 +2511,7 @@
   .booking-footer-note {
     text-align: center;
     font-size: 0.75rem;
-    color: #444;
+    color: #afbdc7;
     margin-top: 12px;
     line-height: 1.55;
   }
@@ -2536,7 +2536,7 @@
   ═══════════════════════════════════════ */
   .service-map-section {
     padding: 100px 48px;
-    background: linear-gradient(180deg, #0A0A08 0%, #0E0E0E 100%);
+    background: linear-gradient(180deg, #ebf1f6 0%, #eff4f8 100%);
     position: relative;
     overflow: hidden;
   }
@@ -2546,8 +2546,8 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 20% 50%, rgba(201,168,76,0.05) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 80% 30%, rgba(201,168,76,0.04) 0%, transparent 70%);
+      radial-gradient(ellipse 60% 50% at 20% 50%, rgba(49,146,184,0.05) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 80% 30%, rgba(49,146,184,0.04) 0%, transparent 70%);
     pointer-events: none;
   }
 
@@ -2572,7 +2572,7 @@
     color: var(--gold);
     margin-bottom: 16px;
     padding: 4px 14px;
-    border: 1px solid rgba(201,168,76,0.25);
+    border: 1px solid rgba(49,146,184,0.25);
     border-radius: 30px;
   }
 
@@ -2589,7 +2589,7 @@
 
   .service-map-text p {
     font-size: 0.92rem;
-    color: #888;
+    color: #627b8c;
     line-height: 1.75;
     margin-bottom: 32px;
   }
@@ -2619,7 +2619,7 @@
   }
 
   .zone-dot.green  { background: #4CAF82; box-shadow: 0 0 6px rgba(76,175,130,0.6); }
-  .zone-dot.gold   { background: var(--gold); box-shadow: 0 0 6px rgba(201,168,76,0.5); }
+  .zone-dot.gold   { background: var(--gold); box-shadow: 0 0 6px rgba(49,146,184,0.5); }
   .zone-dot.blue   { background: #4C8CC9; box-shadow: 0 0 6px rgba(76,140,201,0.5); }
 
   .delivery-badge {
@@ -2644,11 +2644,11 @@
 
   .map-container {
     border-radius: 20px;
-    border: 1px solid rgba(201,168,76,0.25);
+    border: 1px solid rgba(49,146,184,0.25);
     padding: 0;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.08);
+    box-shadow: 0 24px 60px rgba(228,236,242,0.6), 0 0 0 1px rgba(49,146,184,0.08);
   }
 
 
@@ -2656,8 +2656,8 @@
     position: absolute;
     top: 16px;
     left: 16px;
-    background: rgba(0,0,0,0.7);
-    border: 1px solid rgba(201,168,76,0.3);
+    background: rgba(228,236,242,0.7);
+    border: 1px solid rgba(49,146,184,0.3);
     border-radius: 20px;
     padding: 5px 12px;
     font-size: 0.7rem;
@@ -2683,8 +2683,8 @@
 
   .zone-tooltip {
     position: absolute;
-    background: rgba(14,14,14,0.95);
-    border: 1px solid rgba(201,168,76,0.3);
+    background: rgba(239,244,248,0.95);
+    border: 1px solid rgba(49,146,184,0.3);
     border-radius: 6px;
     padding: 6px 10px;
     font-size: 0.72rem;
@@ -2725,8 +2725,8 @@
     height: 0;
     border-radius: 16px;
     overflow: hidden;
-    border: 1px solid rgba(201,168,76,0.2);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid rgba(49,146,184,0.2);
+    box-shadow: 0 20px 60px rgba(228,236,242,0.5);
   }
   .video-embed-wrap iframe,
   .video-embed-wrap video {
@@ -2745,11 +2745,11 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    background: linear-gradient(135deg, #0e0e0e, #1a1a0e);
+    background: linear-gradient(135deg, #eff4f8, #f4f8fa);
     cursor: pointer;
     transition: background 0.3s;
   }
-  .video-placeholder:hover { background: linear-gradient(135deg, #121212, #1e1e0e); }
+  .video-placeholder:hover { background: linear-gradient(135deg, #f3f6f9, #f6f9fb); }
   .video-play-btn {
     width: 72px; height: 72px;
     border-radius: 50%;
@@ -2758,10 +2758,10 @@
     font-size: 1.6rem;
     display: flex; align-items: center; justify-content: center;
     padding-left: 4px;
-    box-shadow: 0 0 0 0 rgba(201,168,76,0.5);
+    box-shadow: 0 0 0 0 rgba(49,146,184,0.5);
     animation: btn-ring-pulse 2.2s ease-out infinite;
   }
-  .video-placeholder-text { text-align: center; color: #888; font-size: 0.85rem; }
+  .video-placeholder-text { text-align: center; color: #627b8c; font-size: 0.85rem; }
   .video-placeholder-text strong { color: var(--white); display: block; margin-bottom: 4px; }
   @media (max-width: 600px) { .video-section { padding: 60px 16px; } }
 
@@ -2775,7 +2775,7 @@
     font-size: 0.88rem;
   }
   .compare-table thead tr {
-    border-bottom: 2px solid rgba(201,168,76,0.3);
+    border-bottom: 2px solid rgba(49,146,184,0.3);
   }
   .compare-table th {
     padding: 14px 16px;
@@ -2783,24 +2783,24 @@
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #777;
+    color: #738c9d;
     text-align: center;
   }
-  .compare-table th:first-child { text-align: left; color: #555; }
+  .compare-table th:first-child { text-align: left; color: #9badb9; }
   .compare-table th.col-us { color: var(--gold); }
   .compare-table td {
     padding: 14px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    color: #888;
+    border-bottom: 1px solid rgba(19,49,73,0.05);
+    color: #627b8c;
     text-align: center;
   }
-  .compare-table td:first-child { text-align: left; color: #bbb; font-weight: 500; }
-  .compare-table td.col-us { background: rgba(201,168,76,0.05); color: var(--white); font-weight: 600; }
+  .compare-table td:first-child { text-align: left; color: #384650; font-weight: 500; }
+  .compare-table td.col-us { background: rgba(49,146,184,0.05); color: var(--white); font-weight: 600; }
   .compare-table td.check { color: #4CAF82; font-size: 1rem; }
-  .compare-table td.cross { color: #555; }
-  .compare-table td.neutral { color: #888; }
-  .compare-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
-  .compare-table tbody tr:hover td.col-us { background: rgba(201,168,76,0.09); }
+  .compare-table td.cross { color: #9badb9; }
+  .compare-table td.neutral { color: #627b8c; }
+  .compare-table tbody tr:hover td { background: rgba(19,49,73,0.02); }
+  .compare-table tbody tr:hover td.col-us { background: rgba(49,146,184,0.09); }
   @media (max-width: 600px) {
     .compare-section { padding: 60px 16px; }
     .compare-table { font-size: 0.8rem; }
@@ -2819,7 +2819,7 @@
     position: absolute;
     left: 10px; top: 8px; bottom: 8px;
     width: 2px;
-    background: linear-gradient(180deg, var(--gold), rgba(201,168,76,0.1));
+    background: linear-gradient(180deg, var(--gold), rgba(49,146,184,0.1));
     border-radius: 2px;
   }
   .timeline-item {
@@ -2837,7 +2837,7 @@
     width: 14px; height: 14px;
     border-radius: 50%;
     background: var(--gold);
-    box-shadow: 0 0 0 4px rgba(201,168,76,0.15);
+    box-shadow: 0 0 0 4px rgba(49,146,184,0.15);
   }
   .timeline-week {
     font-size: 0.75rem;
@@ -2851,19 +2851,19 @@
   }
   .timeline-card {
     background: var(--dark-card);
-    border: 1px solid rgba(255,255,255,0.07);
+    border: 1px solid rgba(19,49,73,0.07);
     border-radius: 12px;
     padding: 20px 24px;
     transition: border-color 0.3s;
   }
-  .timeline-card:hover { border-color: rgba(201,168,76,0.25); }
+  .timeline-card:hover { border-color: rgba(49,146,184,0.25); }
   .timeline-card h4 {
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--white);
     margin-bottom: 8px;
   }
-  .timeline-card p { font-size: 0.83rem; color: #777; line-height: 1.65; }
+  .timeline-card p { font-size: 0.83rem; color: #738c9d; line-height: 1.65; }
   @media (max-width: 600px) {
     .timeline-section { padding: 60px 24px; }
     .timeline-item { grid-template-columns: 70px 1fr; gap: 12px; }
@@ -2893,7 +2893,7 @@
     margin-bottom: 24px;
   }
   .about-text h2 em { font-style: italic; color: var(--gold); }
-  .about-text p { font-size: 0.88rem; color: #888; line-height: 1.75; margin-bottom: 14px; }
+  .about-text p { font-size: 0.88rem; color: #627b8c; line-height: 1.75; margin-bottom: 14px; }
   .about-badges {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2903,8 +2903,8 @@
     text-align: center;
     padding: 28px 16px;
     border-radius: 14px;
-    border: 1px solid rgba(201,168,76,0.18);
-    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(49,146,184,0.18);
+    background: rgba(49,146,184,0.04);
   }
   .about-badge-num {
     display: block;
@@ -2915,7 +2915,7 @@
     line-height: 1;
     margin-bottom: 8px;
   }
-  .about-badge-label { font-size: 0.78rem; color: #777; letter-spacing: 0.05em; }
+  .about-badge-label { font-size: 0.78rem; color: #738c9d; letter-spacing: 0.05em; }
   @media (max-width: 900px) {
     .about-inner { grid-template-columns: 1fr; gap: 40px; }
     .about-section { padding: 60px 24px; }
@@ -2925,8 +2925,8 @@
   .guarantee-section {
     background: var(--dark-mid);
     padding: 80px 48px;
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(19,49,73,0.05);
+    border-bottom: 1px solid rgba(19,49,73,0.05);
   }
   .guarantee-inner { max-width: 1100px; margin: 0 auto; }
   .guarantee-grid {
@@ -2938,12 +2938,12 @@
     text-align: center;
     padding: 32px 20px;
     border-radius: 14px;
-    border: 1px solid rgba(201,168,76,0.12);
-    background: rgba(201,168,76,0.03);
+    border: 1px solid rgba(49,146,184,0.12);
+    background: rgba(49,146,184,0.03);
     transition: border-color 0.3s, transform 0.3s;
   }
-  .guarantee-item:hover { border-color: rgba(201,168,76,0.3); transform: translateY(-4px); }
-  .guarantee-icon { width:48px; height:48px; margin-bottom:18px; display:flex; align-items:center; justify-content:center; background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.2); border-radius:12px; }
+  .guarantee-item:hover { border-color: rgba(49,146,184,0.3); transform: translateY(-4px); }
+  .guarantee-icon { width:48px; height:48px; margin-bottom:18px; display:flex; align-items:center; justify-content:center; background:rgba(49,146,184,0.08); border:1px solid rgba(49,146,184,0.2); border-radius:12px; }
   .guarantee-icon svg { width:24px; height:24px; stroke:var(--gold); fill:none; }
   .guarantee-item h3 {
     font-size: 0.95rem;
@@ -2952,7 +2952,7 @@
     margin-bottom: 10px;
     letter-spacing: 0.02em;
   }
-  .guarantee-item p { font-size: 0.83rem; color: #777; line-height: 1.65; }
+  .guarantee-item p { font-size: 0.83rem; color: #738c9d; line-height: 1.65; }
   @media (max-width: 900px) {
     .guarantee-grid { grid-template-columns: repeat(2, 1fr); }
     .guarantee-section { padding: 60px 24px; }
@@ -2966,8 +2966,8 @@
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 1001;
-    background: rgba(14,14,14,0.97);
-    border-bottom: 1px solid rgba(201,168,76,0.25);
+    background: rgba(239,244,248,0.97);
+    border-bottom: 1px solid rgba(49,146,184,0.25);
     backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
@@ -2979,7 +2979,7 @@
   #sticky-book-bar.visible { transform: translateY(0); }
   #sticky-book-bar .sbb-text {
     font-size: 0.85rem;
-    color: #aaa;
+    color: #465864;
   }
   #sticky-book-bar .sbb-text strong { color: var(--white); }
   #sticky-book-bar .sbb-btn {
@@ -3012,8 +3012,8 @@
     z-index: 998;
     width: 44px; height: 44px;
     border-radius: 50%;
-    background: rgba(201,168,76,0.12);
-    border: 1px solid rgba(201,168,76,0.35);
+    background: rgba(49,146,184,0.12);
+    border: 1px solid rgba(49,146,184,0.35);
     color: var(--gold);
     font-size: 1.1rem;
     cursor: pointer;
@@ -3023,7 +3023,7 @@
     transition: opacity 0.3s, transform 0.3s;
   }
   #back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
-  #back-to-top:hover { background: rgba(201,168,76,0.22); }
+  #back-to-top:hover { background: rgba(49,146,184,0.22); }
 
   @media (max-width: 480px) {
     #back-to-top { bottom: 16px; left: 16px; }
@@ -3948,8 +3948,8 @@
               <stop offset="100%" stop-color="rgba(20,55,90,0.1)"/>
             </linearGradient>
             <linearGradient id="landGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="rgba(201,168,76,0.07)"/>
-              <stop offset="100%" stop-color="rgba(201,168,76,0.02)"/>
+              <stop offset="0%" stop-color="rgba(49,146,184,0.07)"/>
+              <stop offset="100%" stop-color="rgba(49,146,184,0.02)"/>
             </linearGradient>
             <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
               <feGaussianBlur stdDeviation="5" result="b"/>
@@ -3972,10 +3972,10 @@
 
           <!-- ── LAND ── -->
           <path d="M0,154 Q14,150 28,146 Q55,140 80,134 Q105,128 132,126 Q158,128 185,130 Q210,128 238,124 Q265,120 295,122 Q320,124 345,126 Q370,122 400,120 Q430,118 460,120 Q490,122 520,128 Q555,134 580,148 L580,460 L0,460 Z"
-                fill="url(#landGrad)" stroke="rgba(201,168,76,0.2)" stroke-width="1.2"/>
+                fill="url(#landGrad)" stroke="rgba(49,146,184,0.2)" stroke-width="1.2"/>
 
           <!-- Desert texture -->
-          <g fill="rgba(201,168,76,0.07)" stroke="none">
+          <g fill="rgba(49,146,184,0.07)" stroke="none">
             <circle cx="310" cy="310" r="1.5"/><circle cx="350" cy="340" r="1"/>
             <circle cx="280" cy="370" r="1.5"/><circle cx="420" cy="295" r="1"/>
             <circle cx="190" cy="410" r="1.5"/><circle cx="455" cy="370" r="1"/>
@@ -4014,9 +4014,9 @@
 
           <!-- ── SHEIKH ZAYED ROAD ── -->
           <path d="M288,218 Q264,250 236,280 Q208,310 178,336 Q148,360 116,385 Q90,404 58,425"
-                stroke="rgba(201,168,76,0.38)" stroke-width="2.8" fill="none"
+                stroke="rgba(49,146,184,0.38)" stroke-width="2.8" fill="none"
                 stroke-dasharray="9 4" stroke-linecap="round"/>
-          <text x="130" y="378" fill="rgba(201,168,76,0.38)" font-size="7.5"
+          <text x="130" y="378" fill="rgba(49,146,184,0.38)" font-size="7.5"
                 font-family="Jost,sans-serif" letter-spacing="1" transform="rotate(-37,130,378)">Sheikh Zayed Rd</text>
 
           <!-- Metro Red Line -->
@@ -4027,7 +4027,7 @@
 
           <!-- E311 Road -->
           <path d="M348,232 Q375,265 398,305 Q420,345 436,392"
-                stroke="rgba(201,168,76,0.18)" stroke-width="1.5" fill="none" stroke-dasharray="5 5"/>
+                stroke="rgba(49,146,184,0.18)" stroke-width="1.5" fill="none" stroke-dasharray="5 5"/>
 
           <!-- ── ZONE: DOWNTOWN / BUSINESS BAY / DIFC ── -->
           <g style="cursor:pointer">
@@ -4044,7 +4044,7 @@
             <!-- Dot -->
             <circle cx="290" cy="228" r="4.5" fill="#4CAF82"/>
             <!-- Burj Khalifa silhouette -->
-            <polygon points="290,198 287,218 293,218" fill="rgba(201,168,76,0.75)"/>
+            <polygon points="290,198 287,218 293,218" fill="rgba(49,146,184,0.75)"/>
             <rect x="289.5" y="195" width="3" height="4" rx="1" fill="var(--gold)"/>
             <!-- Labels -->
             <text x="290" y="237" fill="#4CAF82" font-size="9"
@@ -4101,32 +4101,32 @@
 
           <!-- ── ZONE: DEIRA / BUR DUBAI ── -->
           <g style="cursor:pointer">
-            <ellipse cx="396" cy="158" rx="62" ry="40" fill="rgba(201,168,76,0.06)" filter="url(#glow)"/>
+            <ellipse cx="396" cy="158" rx="62" ry="40" fill="rgba(49,146,184,0.06)" filter="url(#glow)"/>
             <path d="M345,142 Q375,128 418,130 Q446,132 454,150 Q458,165 438,174 Q415,182 384,180 Q353,176 342,162 Q337,150 345,142Z"
-                  fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.52)" stroke-width="1.8"/>
-            <circle cx="396" cy="156" r="4" fill="rgba(201,168,76,0.2)">
+                  fill="rgba(49,146,184,0.15)" stroke="rgba(49,146,184,0.52)" stroke-width="1.8"/>
+            <circle cx="396" cy="156" r="4" fill="rgba(49,146,184,0.2)">
               <animate attributeName="r" values="4;14;4" dur="2.8s" repeatCount="indefinite" begin="0.3s"/>
               <animate attributeName="opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite" begin="0.3s"/>
             </circle>
-            <circle cx="396" cy="156" r="4.5" fill="#C9A84C"/>
-            <text x="396" y="154" fill="#C9A84C" font-size="9"
+            <circle cx="396" cy="156" r="4.5" fill="#3192b8"/>
+            <text x="396" y="154" fill="#3192b8" font-size="9"
                   font-family="Jost,sans-serif" text-anchor="middle" font-weight="700">Deira</text>
-            <text x="396" y="165" fill="rgba(201,168,76,0.72)" font-size="7.5"
+            <text x="396" y="165" fill="rgba(49,146,184,0.72)" font-size="7.5"
                   font-family="Jost,sans-serif" text-anchor="middle">Bur Dubai</text>
           </g>
 
           <!-- ── ZONE: MIRDIF / ARABIAN RANCHES ── -->
           <g style="cursor:pointer">
             <path d="M374,248 Q405,234 444,238 Q468,242 474,260 Q478,280 456,292 Q430,300 400,296 Q372,290 364,272 Q359,256 374,248Z"
-                  fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.42)" stroke-width="1.8"/>
-            <circle cx="420" cy="265" r="4" fill="rgba(201,168,76,0.2)">
+                  fill="rgba(49,146,184,0.12)" stroke="rgba(49,146,184,0.42)" stroke-width="1.8"/>
+            <circle cx="420" cy="265" r="4" fill="rgba(49,146,184,0.2)">
               <animate attributeName="r" values="4;12;4" dur="2.8s" repeatCount="indefinite" begin="1.0s"/>
               <animate attributeName="opacity" values="0.6;0;0.6" dur="2.8s" repeatCount="indefinite" begin="1.0s"/>
             </circle>
-            <circle cx="420" cy="265" r="4" fill="#C9A84C"/>
-            <text x="420" y="263" fill="#C9A84C" font-size="8.5"
+            <circle cx="420" cy="265" r="4" fill="#3192b8"/>
+            <text x="420" y="263" fill="#3192b8" font-size="8.5"
                   font-family="Jost,sans-serif" text-anchor="middle" font-weight="700">Mirdif</text>
-            <text x="420" y="273" fill="rgba(201,168,76,0.7)" font-size="7"
+            <text x="420" y="273" fill="rgba(49,146,184,0.7)" font-size="7"
                   font-family="Jost,sans-serif" text-anchor="middle">Arabian Ranches</text>
           </g>
 
@@ -4162,40 +4162,40 @@
 
           <!-- ── LANDMARKS ── -->
           <!-- Burj Al Arab dot -->
-          <circle cx="162" cy="230" r="2.8" fill="rgba(201,168,76,0.65)"/>
-          <text x="162" y="246" fill="rgba(201,168,76,0.48)" font-size="6.5"
+          <circle cx="162" cy="230" r="2.8" fill="rgba(49,146,184,0.65)"/>
+          <text x="162" y="246" fill="rgba(49,146,184,0.48)" font-size="6.5"
                 font-family="Jost,sans-serif" text-anchor="middle">Burj Al Arab</text>
 
           <!-- DXB Airport -->
           <rect x="408" y="180" width="28" height="15" rx="3"
-                fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
-          <text x="422" y="191" fill="rgba(255,255,255,0.4)" font-size="7.5"
+                fill="rgba(19,49,73,0.04)" stroke="rgba(19,49,73,0.14)" stroke-width="1"/>
+          <text x="422" y="191" fill="rgba(19,49,73,0.4)" font-size="7.5"
                 font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">✈ DXB</text>
 
           <!-- Compass -->
           <g transform="translate(540, 190)">
-            <circle cx="0" cy="0" r="18" fill="rgba(0,0,0,0.5)" stroke="rgba(201,168,76,0.25)" stroke-width="1"/>
-            <polygon points="0,-12 -4,0 0,-4 4,0" fill="rgba(201,168,76,0.8)"/>
-            <polygon points="0,12 -4,0 0,4 4,0" fill="rgba(255,255,255,0.15)"/>
-            <text x="0" y="-14" fill="rgba(201,168,76,0.9)" font-size="7"
+            <circle cx="0" cy="0" r="18" fill="rgba(228,236,242,0.5)" stroke="rgba(49,146,184,0.25)" stroke-width="1"/>
+            <polygon points="0,-12 -4,0 0,-4 4,0" fill="rgba(49,146,184,0.8)"/>
+            <polygon points="0,12 -4,0 0,4 4,0" fill="rgba(19,49,73,0.15)"/>
+            <text x="0" y="-14" fill="rgba(49,146,184,0.9)" font-size="7"
                   font-family="Jost,sans-serif" text-anchor="middle" font-weight="700">N</text>
           </g>
 
           <!-- ── LEGEND ── -->
           <g transform="translate(310, 396)">
             <rect width="258" height="54" rx="8"
-                  fill="rgba(6,6,6,0.85)" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+                  fill="rgba(233,240,244,0.85)" stroke="rgba(19,49,73,0.07)" stroke-width="1"/>
             <rect x="12" y="10" width="14" height="10" rx="3" fill="rgba(76,175,130,0.25)" stroke="rgba(76,175,130,0.7)" stroke-width="1.2"/>
-            <text x="32" y="19" fill="rgba(255,255,255,0.65)" font-size="8" font-family="Jost,sans-serif">Same day · 2–4 hrs</text>
-            <rect x="12" y="26" width="14" height="10" rx="3" fill="rgba(201,168,76,0.22)" stroke="rgba(201,168,76,0.65)" stroke-width="1.2"/>
-            <text x="32" y="35" fill="rgba(255,255,255,0.65)" font-size="8" font-family="Jost,sans-serif">Same day · 4–8 hrs</text>
+            <text x="32" y="19" fill="rgba(19,49,73,0.65)" font-size="8" font-family="Jost,sans-serif">Same day · 2–4 hrs</text>
+            <rect x="12" y="26" width="14" height="10" rx="3" fill="rgba(49,146,184,0.22)" stroke="rgba(49,146,184,0.65)" stroke-width="1.2"/>
+            <text x="32" y="35" fill="rgba(19,49,73,0.65)" font-size="8" font-family="Jost,sans-serif">Same day · 4–8 hrs</text>
             <rect x="140" y="10" width="14" height="10" rx="3" fill="rgba(76,140,201,0.18)" stroke="rgba(76,140,201,0.5)" stroke-width="1.2" stroke-dasharray="3 2"/>
-            <text x="160" y="19" fill="rgba(255,255,255,0.65)" font-size="8" font-family="Jost,sans-serif">Extended (+fee)</text>
+            <text x="160" y="19" fill="rgba(19,49,73,0.65)" font-size="8" font-family="Jost,sans-serif">Extended (+fee)</text>
             <circle cx="19" cy="46" r="4" fill="#4CAF82">
               <animate attributeName="r" values="3;5.5;3" dur="2s" repeatCount="indefinite"/>
               <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
             </circle>
-            <text x="32" y="50" fill="rgba(255,255,255,0.45)" font-size="7.5" font-family="Jost,sans-serif">Live coverage indicator</text>
+            <text x="32" y="50" fill="rgba(19,49,73,0.45)" font-size="7.5" font-family="Jost,sans-serif">Live coverage indicator</text>
           </g>
 
         </svg>
@@ -4256,50 +4256,50 @@
   <div class="featured-label"><span data-en>Featured Article</span><span data-ar>المقال المميز</span></div>
   <div class="featured-card reveal" onclick="openArticle('featured')">
     <div class="featured-visual">
-      <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a CPM knee machine supporting a patient's leg during rehabilitation" style="width:85%;max-width:360px;position:relative;z-index:2;filter:drop-shadow(0 8px 50px rgba(201,168,76,0.18))">
+      <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a CPM knee machine supporting a patient's leg during rehabilitation" style="width:85%;max-width:360px;position:relative;z-index:2;filter:drop-shadow(0 8px 50px rgba(49,146,184,0.18))">
         <!-- Bed surface -->
-        <rect x="20" y="210" width="360" height="14" rx="5" fill="#1c1c1c" stroke="rgba(201,168,76,0.25)" stroke-width="1"/>
+        <rect x="20" y="210" width="360" height="14" rx="5" fill="#fbfcfd" stroke="rgba(49,146,184,0.25)" stroke-width="1"/>
         <!-- Mattress -->
-        <rect x="30" y="195" width="340" height="18" rx="4" fill="#222" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <rect x="30" y="195" width="340" height="18" rx="4" fill="#d7dee3" stroke="rgba(19,49,73,0.06)" stroke-width="1"/>
         <!-- Lower leg (shin) -->
-        <rect x="60" y="148" width="155" height="50" rx="24" fill="#282828" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
+        <rect x="60" y="148" width="155" height="50" rx="24" fill="#d0d8de" stroke="rgba(49,146,184,0.2)" stroke-width="1.5"/>
         <!-- Upper leg (thigh) -->
-        <rect x="168" y="100" width="145" height="50" rx="24" fill="#282828" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
+        <rect x="168" y="100" width="145" height="50" rx="24" fill="#d0d8de" stroke="rgba(49,146,184,0.2)" stroke-width="1.5"/>
         <!-- Knee joint -->
-        <ellipse cx="182" cy="168" rx="26" ry="24" fill="#1e1e1e" stroke="rgba(201,168,76,0.55)" stroke-width="2"/>
-        <ellipse cx="182" cy="168" rx="13" ry="12" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
+        <ellipse cx="182" cy="168" rx="26" ry="24" fill="#fcfdfe" stroke="rgba(49,146,184,0.55)" stroke-width="2"/>
+        <ellipse cx="182" cy="168" rx="13" ry="12" fill="rgba(49,146,184,0.12)" stroke="rgba(49,146,184,0.35)" stroke-width="1"/>
         <!-- Surgical scar line -->
-        <line x1="182" y1="150" x2="182" y2="186" stroke="rgba(201,168,76,0.4)" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+        <line x1="182" y1="150" x2="182" y2="186" stroke="rgba(49,146,184,0.4)" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
         <!-- CPM main rail -->
-        <rect x="40" y="192" width="310" height="8" rx="4" fill="#C9A84C" opacity="0.55"/>
+        <rect x="40" y="192" width="310" height="8" rx="4" fill="#3192b8" opacity="0.55"/>
         <!-- CPM lower arm strut -->
-        <rect x="66" y="144" width="12" height="55" rx="4" fill="#C9A84C" opacity="0.75"/>
+        <rect x="66" y="144" width="12" height="55" rx="4" fill="#3192b8" opacity="0.75"/>
         <!-- CPM upper arm strut -->
-        <rect x="174" y="96" width="12" height="60" rx="4" fill="#C9A84C" opacity="0.75"/>
+        <rect x="174" y="96" width="12" height="60" rx="4" fill="#3192b8" opacity="0.75"/>
         <!-- Hinge pin at knee -->
-        <circle cx="180" cy="194" r="7" fill="#C9A84C" opacity="0.8"/>
-        <circle cx="180" cy="194" r="3" fill="#0e0e0e"/>
+        <circle cx="180" cy="194" r="7" fill="#3192b8" opacity="0.8"/>
+        <circle cx="180" cy="194" r="3" fill="#eff4f8"/>
         <!-- Control unit -->
-        <rect x="298" y="150" width="68" height="50" rx="8" fill="#1a1a1a" stroke="rgba(201,168,76,0.45)" stroke-width="1.5"/>
-        <rect x="308" y="160" width="48" height="6" rx="2" fill="rgba(201,168,76,0.25)"/>
-        <circle cx="318" cy="178" r="6" fill="rgba(201,168,76,0.65)"/>
-        <circle cx="336" cy="178" r="6" fill="rgba(201,168,76,0.2)"/>
-        <circle cx="354" cy="178" r="6" fill="rgba(255,255,255,0.08)"/>
-        <rect x="308" y="188" width="48" height="4" rx="2" fill="rgba(255,255,255,0.05)"/>
+        <rect x="298" y="150" width="68" height="50" rx="8" fill="#f9fbfc" stroke="rgba(49,146,184,0.45)" stroke-width="1.5"/>
+        <rect x="308" y="160" width="48" height="6" rx="2" fill="rgba(49,146,184,0.25)"/>
+        <circle cx="318" cy="178" r="6" fill="rgba(49,146,184,0.65)"/>
+        <circle cx="336" cy="178" r="6" fill="rgba(49,146,184,0.2)"/>
+        <circle cx="354" cy="178" r="6" fill="rgba(19,49,73,0.08)"/>
+        <rect x="308" y="188" width="48" height="4" rx="2" fill="rgba(19,49,73,0.05)"/>
         <!-- Wire from control to machine -->
-        <path d="M298 175 Q270 175 265 192" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+        <path d="M298 175 Q270 175 265 192" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
         <!-- Velcro straps -->
-        <rect x="72" y="140" width="60" height="10" rx="5" fill="rgba(201,168,76,0.4)"/>
-        <rect x="180" y="92" width="60" height="10" rx="5" fill="rgba(201,168,76,0.4)"/>
+        <rect x="72" y="140" width="60" height="10" rx="5" fill="rgba(49,146,184,0.4)"/>
+        <rect x="180" y="92" width="60" height="10" rx="5" fill="rgba(49,146,184,0.4)"/>
         <!-- Range-of-motion arc -->
-        <path d="M145 168 A55 55 0 0 1 182 113" stroke="rgba(201,168,76,0.45)" stroke-width="1.5" fill="none" stroke-dasharray="5 4"/>
-        <text x="112" y="128" fill="rgba(201,168,76,0.7)" font-size="13" font-family="Jost,sans-serif" font-weight="500">90°</text>
+        <path d="M145 168 A55 55 0 0 1 182 113" stroke="rgba(49,146,184,0.45)" stroke-width="1.5" fill="none" stroke-dasharray="5 4"/>
+        <text x="112" y="128" fill="rgba(49,146,184,0.7)" font-size="13" font-family="Jost,sans-serif" font-weight="500">90°</text>
         <!-- Motion arrows -->
-        <path d="M215 115 Q238 95 248 115" stroke="rgba(201,168,76,0.6)" stroke-width="2" fill="none"/>
-        <polygon points="248,115 243,104 254,108" fill="rgba(201,168,76,0.6)"/>
-        <path d="M215 135 Q238 155 248 135" stroke="rgba(201,168,76,0.35)" stroke-width="2" fill="none"/>
+        <path d="M215 115 Q238 95 248 115" stroke="rgba(49,146,184,0.6)" stroke-width="2" fill="none"/>
+        <polygon points="248,115 243,104 254,108" fill="rgba(49,146,184,0.6)"/>
+        <path d="M215 135 Q238 155 248 135" stroke="rgba(49,146,184,0.35)" stroke-width="2" fill="none"/>
         <!-- Label -->
-        <text x="200" y="252" fill="rgba(201,168,76,0.45)" font-size="11" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="4">CONTINUOUS PASSIVE MOTION</text>
+        <text x="200" y="252" fill="rgba(49,146,184,0.45)" font-size="11" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="4">CONTINUOUS PASSIVE MOTION</text>
       </svg>
     </div>
     <div class="featured-content">
@@ -4334,39 +4334,39 @@
       <div class="card-visual card-visual-1">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Calendar frame -->
-          <rect x="30" y="20" width="140" height="118" rx="8" fill="#1a1a1a" stroke="rgba(201,168,76,0.35)" stroke-width="1.5"/>
+          <rect x="30" y="20" width="140" height="118" rx="8" fill="#f9fbfc" stroke="rgba(49,146,184,0.35)" stroke-width="1.5"/>
           <!-- Calendar header -->
-          <rect x="30" y="20" width="140" height="28" rx="8" fill="rgba(201,168,76,0.18)"/>
-          <rect x="30" y="36" width="140" height="12" fill="rgba(201,168,76,0.18)"/>
-          <text x="100" y="39" fill="#C9A84C" font-size="11" font-family="Cormorant Garamond,serif" text-anchor="middle" font-weight="600">RECOVERY TIMELINE</text>
+          <rect x="30" y="20" width="140" height="28" rx="8" fill="rgba(49,146,184,0.18)"/>
+          <rect x="30" y="36" width="140" height="12" fill="rgba(49,146,184,0.18)"/>
+          <text x="100" y="39" fill="#3192b8" font-size="11" font-family="Cormorant Garamond,serif" text-anchor="middle" font-weight="600">RECOVERY TIMELINE</text>
           <!-- Week rows -->
-          <rect x="42" y="58" width="30" height="18" rx="4" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-          <text x="57" y="71" fill="rgba(201,168,76,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle">Wk 1</text>
-          <rect x="82" y="58" width="30" height="18" rx="4" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-          <text x="97" y="71" fill="rgba(201,168,76,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle">Wk 2</text>
-          <rect x="122" y="58" width="30" height="18" rx="4" fill="rgba(201,168,76,0.35)" stroke="rgba(201,168,76,0.7)" stroke-width="1.5"/>
-          <text x="137" y="71" fill="#C9A84C" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">Wk 3</text>
+          <rect x="42" y="58" width="30" height="18" rx="4" fill="rgba(49,146,184,0.12)" stroke="rgba(49,146,184,0.3)" stroke-width="1"/>
+          <text x="57" y="71" fill="rgba(49,146,184,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle">Wk 1</text>
+          <rect x="82" y="58" width="30" height="18" rx="4" fill="rgba(49,146,184,0.12)" stroke="rgba(49,146,184,0.3)" stroke-width="1"/>
+          <text x="97" y="71" fill="rgba(49,146,184,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle">Wk 2</text>
+          <rect x="122" y="58" width="30" height="18" rx="4" fill="rgba(49,146,184,0.35)" stroke="rgba(49,146,184,0.7)" stroke-width="1.5"/>
+          <text x="137" y="71" fill="#3192b8" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">Wk 3</text>
           <!-- Progress bar row 2 -->
-          <rect x="42" y="86" width="110" height="7" rx="3" fill="rgba(255,255,255,0.05)"/>
-          <rect x="42" y="86" width="68" height="7" rx="3" fill="rgba(201,168,76,0.5)"/>
-          <text x="160" y="93" fill="#777" font-size="8" font-family="Jost,sans-serif">62%</text>
+          <rect x="42" y="86" width="110" height="7" rx="3" fill="rgba(19,49,73,0.05)"/>
+          <rect x="42" y="86" width="68" height="7" rx="3" fill="rgba(49,146,184,0.5)"/>
+          <text x="160" y="93" fill="#738c9d" font-size="8" font-family="Jost,sans-serif">62%</text>
           <!-- Row 3 labels -->
-          <rect x="42" y="105" width="110" height="7" rx="3" fill="rgba(255,255,255,0.05)"/>
-          <rect x="42" y="105" width="88" height="7" rx="3" fill="rgba(201,168,76,0.35)"/>
-          <text x="160" y="112" fill="#777" font-size="8" font-family="Jost,sans-serif">80%</text>
+          <rect x="42" y="105" width="110" height="7" rx="3" fill="rgba(19,49,73,0.05)"/>
+          <rect x="42" y="105" width="88" height="7" rx="3" fill="rgba(49,146,184,0.35)"/>
+          <text x="160" y="112" fill="#738c9d" font-size="8" font-family="Jost,sans-serif">80%</text>
           <!-- Checkmarks -->
-          <circle cx="49" cy="127" r="8" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-          <path d="M44 127 L47 130 L54 123" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          <circle cx="73" cy="127" r="8" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-          <path d="M68 127 L71 130 L78 123" stroke="#C9A84C" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          <circle cx="97" cy="127" r="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-          <text x="97" y="131" fill="#555" font-size="9" text-anchor="middle">+</text>
+          <circle cx="49" cy="127" r="8" fill="rgba(49,146,184,0.15)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
+          <path d="M44 127 L47 130 L54 123" stroke="#3192b8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="73" cy="127" r="8" fill="rgba(49,146,184,0.15)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
+          <path d="M68 127 L71 130 L78 123" stroke="#3192b8" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="97" cy="127" r="8" fill="rgba(19,49,73,0.04)" stroke="rgba(19,49,73,0.1)" stroke-width="1"/>
+          <text x="97" y="131" fill="#9badb9" font-size="9" text-anchor="middle">+</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Recovery</span><span data-ar>التعافي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">8 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">8 min</span>
         </div>
         <h3><span data-en>Week-by-Week Knee Recovery Timeline After TKR Surgery</span><span data-ar>الجدول الزمني للتعافي من جراحة الركبة أسبوعاً بأسبوع</span></h3>
         <p><span data-en>From day 1 to week 12 — exactly what to expect at each stage of your total knee replacement recovery journey.</span><span data-ar>من اليوم الأول حتى الأسبوع الثاني عشر — ما تتوقعه في كل مرحلة من رحلة تعافيك.</span></p>
@@ -4381,31 +4381,31 @@
       <div class="card-visual card-visual-2">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- CPM machine mini (left) -->
-          <rect x="18" y="65" width="62" height="32" rx="10" fill="#1e1e1e" stroke="rgba(76,140,201,0.35)" stroke-width="1.5"/>
-          <rect x="22" y="75" width="54" height="5" rx="2" fill="rgba(201,168,76,0.5)"/>
-          <rect x="28" y="84" width="18" height="8" rx="3" fill="rgba(201,168,76,0.25)"/>
-          <rect x="50" y="84" width="18" height="8" rx="3" fill="rgba(201,168,76,0.15)"/>
-          <text x="49" y="112" fill="rgba(201,168,76,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">CPM</text>
+          <rect x="18" y="65" width="62" height="32" rx="10" fill="#fcfdfe" stroke="rgba(76,140,201,0.35)" stroke-width="1.5"/>
+          <rect x="22" y="75" width="54" height="5" rx="2" fill="rgba(49,146,184,0.5)"/>
+          <rect x="28" y="84" width="18" height="8" rx="3" fill="rgba(49,146,184,0.25)"/>
+          <rect x="50" y="84" width="18" height="8" rx="3" fill="rgba(49,146,184,0.15)"/>
+          <text x="49" y="112" fill="rgba(49,146,184,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">CPM</text>
           <!-- Hand / physio (right) -->
-          <ellipse cx="151" cy="72" rx="28" ry="22" fill="#1e1e1e" stroke="rgba(76,140,201,0.35)" stroke-width="1.5"/>
+          <ellipse cx="151" cy="72" rx="28" ry="22" fill="#fcfdfe" stroke="rgba(76,140,201,0.35)" stroke-width="1.5"/>
           <!-- Stylised hand shape -->
-          <path d="M138 80 Q138 64 145 60 Q152 56 155 62 L155 72" stroke="rgba(201,168,76,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M148 78 Q148 62 153 59 Q158 57 160 62 L160 73" stroke="rgba(201,168,76,0.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M157 79 Q157 65 161 63 Q165 62 166 67 L166 77" stroke="rgba(201,168,76,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <path d="M135 80 Q130 72 132 66 Q134 60 140 62" stroke="rgba(201,168,76,0.45)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <text x="151" y="112" fill="rgba(201,168,76,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">PHYSIO</text>
+          <path d="M138 80 Q138 64 145 60 Q152 56 155 62 L155 72" stroke="rgba(49,146,184,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M148 78 Q148 62 153 59 Q158 57 160 62 L160 73" stroke="rgba(49,146,184,0.5)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M157 79 Q157 65 161 63 Q165 62 166 67 L166 77" stroke="rgba(49,146,184,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M135 80 Q130 72 132 66 Q134 60 140 62" stroke="rgba(49,146,184,0.45)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <text x="151" y="112" fill="rgba(49,146,184,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">PHYSIO</text>
           <!-- VS badge -->
-          <circle cx="100" cy="78" r="18" fill="#161616" stroke="rgba(201,168,76,0.5)" stroke-width="1.5"/>
-          <text x="100" y="83" fill="#C9A84C" font-size="14" font-family="Cormorant Garamond,serif" font-weight="600" text-anchor="middle">vs</text>
+          <circle cx="100" cy="78" r="18" fill="#f6f9fb" stroke="rgba(49,146,184,0.5)" stroke-width="1.5"/>
+          <text x="100" y="83" fill="#3192b8" font-size="14" font-family="Cormorant Garamond,serif" font-weight="600" text-anchor="middle">vs</text>
           <!-- Plus sign below -->
-          <text x="100" y="128" fill="rgba(201,168,76,0.4)" font-size="22" font-family="Jost,sans-serif" text-anchor="middle">+</text>
-          <text x="100" y="145" fill="rgba(201,168,76,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">BEST TOGETHER</text>
+          <text x="100" y="128" fill="rgba(49,146,184,0.4)" font-size="22" font-family="Jost,sans-serif" text-anchor="middle">+</text>
+          <text x="100" y="145" fill="rgba(49,146,184,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">BEST TOGETHER</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>CPM Guide</span><span data-ar>دليل CPM</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">6 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">6 min</span>
         </div>
         <h3><span data-en>CPM Machine vs. Manual Physiotherapy: Which Is Better?</span><span data-ar>جهاز CPM مقابل العلاج الطبيعي اليدوي: أيهما أفضل؟</span></h3>
         <p><span data-en>Clinical studies compared. We explain when CPM therapy alone is sufficient and when to combine it with hands-on physiotherapy.</span><span data-ar>مقارنة الدراسات السريرية. نشرح متى يكفي علاج CPM وحده ومتى تحتاج الجمع بينه وبين العلاج الطبيعي.</span></p>
@@ -4420,13 +4420,13 @@
       <div class="card-visual card-visual-3">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Leg silhouette -->
-          <ellipse cx="100" cy="115" rx="55" ry="22" fill="#1e1e1e" stroke="rgba(201,76,76,0.2)" stroke-width="1"/>
-          <rect x="60" y="75" width="80" height="42" rx="20" fill="#252525" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+          <ellipse cx="100" cy="115" rx="55" ry="22" fill="#fcfdfe" stroke="rgba(201,76,76,0.2)" stroke-width="1"/>
+          <rect x="60" y="75" width="80" height="42" rx="20" fill="#d3dbe1" stroke="rgba(19,49,73,0.07)" stroke-width="1"/>
           <!-- Knee area glow (swelling) -->
           <ellipse cx="100" cy="96" rx="30" ry="22" fill="rgba(201,76,76,0.08)"/>
           <ellipse cx="100" cy="96" rx="20" ry="15" fill="rgba(201,76,76,0.12)" stroke="rgba(201,76,76,0.25)" stroke-width="1"/>
           <!-- Ice pack -->
-          <rect x="72" y="64" width="56" height="36" rx="10" fill="#1a2830" stroke="rgba(100,180,220,0.6)" stroke-width="1.5"/>
+          <rect x="72" y="64" width="56" height="36" rx="10" fill="#d3dbe1" stroke="rgba(100,180,220,0.6)" stroke-width="1.5"/>
           <!-- Ice crystals -->
           <line x1="86" y1="74" x2="86" y2="84" stroke="rgba(100,180,220,0.7)" stroke-width="1.5" stroke-linecap="round"/>
           <line x1="81" y1="79" x2="91" y2="79" stroke="rgba(100,180,220,0.7)" stroke-width="1.5" stroke-linecap="round"/>
@@ -4447,7 +4447,7 @@
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Recovery Tips</span><span data-ar>نصائح التعافي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>Managing Pain &amp; Swelling at Home After Knee Surgery</span><span data-ar>إدارة الألم والتورم في المنزل بعد جراحة الركبة</span></h3>
         <p><span data-en>Proven techniques for reducing post-surgical swelling, managing pain naturally, and knowing when something requires medical attention.</span><span data-ar>تقنيات مثبتة لتقليل التورم بعد الجراحة، وإدارة الألم بشكل طبيعي، ومعرفة متى تحتاج رعاية طبية.</span></p>
@@ -4462,31 +4462,31 @@
       <div class="card-visual card-visual-4">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Control panel box -->
-          <rect x="28" y="28" width="144" height="100" rx="10" fill="#1a1a1a" stroke="rgba(76,201,140,0.35)" stroke-width="1.5"/>
+          <rect x="28" y="28" width="144" height="100" rx="10" fill="#f9fbfc" stroke="rgba(76,201,140,0.35)" stroke-width="1.5"/>
           <rect x="28" y="28" width="144" height="20" rx="10" fill="rgba(76,201,140,0.1)"/>
           <rect x="28" y="36" width="144" height="12" fill="rgba(76,201,140,0.1)"/>
-          <text x="100" y="42" fill="rgba(201,168,76,0.7)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">CPM CONTROL UNIT</text>
+          <text x="100" y="42" fill="rgba(49,146,184,0.7)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">CPM CONTROL UNIT</text>
           <!-- Dial 1: Flexion Angle -->
-          <circle cx="60" cy="80" r="20" fill="#161616" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <path d="M60 80 L60 63" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
-          <path d="M60 80 L73 87" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="60" cy="80" r="4" fill="#C9A84C" opacity="0.8"/>
-          <text x="60" y="108" fill="rgba(201,168,76,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">ANGLE</text>
-          <text x="60" y="118" fill="#C9A84C" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">90°</text>
+          <circle cx="60" cy="80" r="20" fill="#f6f9fb" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <path d="M60 80 L60 63" stroke="#3192b8" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 80 L73 87" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="60" cy="80" r="4" fill="#3192b8" opacity="0.8"/>
+          <text x="60" y="108" fill="rgba(49,146,184,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">ANGLE</text>
+          <text x="60" y="118" fill="#3192b8" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">90°</text>
           <!-- Dial 2: Speed -->
-          <circle cx="100" cy="80" r="20" fill="#161616" stroke="rgba(76,201,140,0.35)" stroke-width="1.5"/>
+          <circle cx="100" cy="80" r="20" fill="#f6f9fb" stroke="rgba(76,201,140,0.35)" stroke-width="1.5"/>
           <path d="M100 80 L110 66" stroke="rgba(76,201,140,0.7)" stroke-width="2" stroke-linecap="round"/>
           <path d="M100 80 L87 90" stroke="rgba(76,201,140,0.25)" stroke-width="1.5" stroke-linecap="round"/>
           <circle cx="100" cy="80" r="4" fill="rgba(76,201,140,0.7)"/>
           <text x="100" y="108" fill="rgba(76,201,140,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">SPEED</text>
           <text x="100" y="118" fill="rgba(76,201,140,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">MED</text>
           <!-- Dial 3: Duration -->
-          <circle cx="140" cy="80" r="20" fill="#161616" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
-          <path d="M140 80 L140 62" stroke="rgba(201,168,76,0.5)" stroke-width="2" stroke-linecap="round"/>
-          <path d="M140 80 L155 80" stroke="rgba(201,168,76,0.2)" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="140" cy="80" r="4" fill="rgba(201,168,76,0.5)"/>
-          <text x="140" y="108" fill="rgba(201,168,76,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">TIME</text>
-          <text x="140" y="118" fill="rgba(201,168,76,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">4HR</text>
+          <circle cx="140" cy="80" r="20" fill="#f6f9fb" stroke="rgba(49,146,184,0.3)" stroke-width="1.5"/>
+          <path d="M140 80 L140 62" stroke="rgba(49,146,184,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M140 80 L155 80" stroke="rgba(49,146,184,0.2)" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="140" cy="80" r="4" fill="rgba(49,146,184,0.5)"/>
+          <text x="140" y="108" fill="rgba(49,146,184,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">TIME</text>
+          <text x="140" y="118" fill="rgba(49,146,184,0.8)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">4HR</text>
           <!-- Status LED -->
           <circle cx="155" cy="35" r="5" fill="rgba(76,201,140,0.8)"/>
           <circle cx="155" cy="35" r="8" fill="rgba(76,201,140,0.15)"/>
@@ -4495,7 +4495,7 @@
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>CPM Guide</span><span data-ar>دليل CPM</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">4 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">4 min</span>
         </div>
         <h3><span data-en>CPM Machine Settings Explained: Angle, Speed &amp; Duration</span><span data-ar>شرح إعدادات جهاز CPM: الزاوية، السرعة والمدة</span></h3>
         <p><span data-en>Your physiotherapist set the machine — but do you know why? Understanding your CPM settings helps you use it more effectively and safely.</span><span data-ar>ضبط المعالج الطبيعي الجهاز — لكن هل تعرف السبب؟ فهم إعداداتك يساعدك على استخدامه بفعالية أكبر وأمان أعلى.</span></p>
@@ -4510,27 +4510,27 @@
       <div class="card-visual card-visual-5">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Plate -->
-          <circle cx="100" cy="88" r="54" fill="#181818" stroke="rgba(140,76,201,0.25)" stroke-width="1.5"/>
-          <circle cx="100" cy="88" r="44" fill="#1c1c1c" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+          <circle cx="100" cy="88" r="54" fill="#f8fafb" stroke="rgba(140,76,201,0.25)" stroke-width="1.5"/>
+          <circle cx="100" cy="88" r="44" fill="#fbfcfd" stroke="rgba(19,49,73,0.05)" stroke-width="1"/>
           <!-- Food segments -->
           <!-- Protein (salmon pink) -->
           <path d="M100 88 L100 46 A42 42 0 0 1 136 110 Z" fill="rgba(220,120,80,0.25)" stroke="rgba(220,120,80,0.4)" stroke-width="1"/>
           <!-- Greens -->
           <path d="M100 88 L136 110 A42 42 0 0 1 64 110 Z" fill="rgba(76,160,80,0.2)" stroke="rgba(76,160,80,0.4)" stroke-width="1"/>
           <!-- Grains -->
-          <path d="M100 88 L64 110 A42 42 0 0 1 100 46 Z" fill="rgba(201,168,76,0.18)" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
+          <path d="M100 88 L64 110 A42 42 0 0 1 100 46 Z" fill="rgba(49,146,184,0.18)" stroke="rgba(49,146,184,0.35)" stroke-width="1"/>
           <!-- Center circle -->
-          <circle cx="100" cy="88" r="14" fill="#161616" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-          <text x="100" y="92" fill="rgba(201,168,76,0.7)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0">FUEL</text>
+          <circle cx="100" cy="88" r="14" fill="#f6f9fb" stroke="rgba(19,49,73,0.08)" stroke-width="1"/>
+          <text x="100" y="92" fill="rgba(49,146,184,0.7)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0">FUEL</text>
           <!-- Labels -->
           <text x="118" y="70" fill="rgba(220,120,80,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">PROTEIN</text>
           <text x="100" y="125" fill="rgba(76,160,80,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">GREENS</text>
-          <text x="78" y="72" fill="rgba(201,168,76,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">GRAINS</text>
+          <text x="78" y="72" fill="rgba(49,146,184,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">GRAINS</text>
           <!-- Fork -->
-          <line x1="168" y1="52" x2="168" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-linecap="round"/>
-          <line x1="163" y1="52" x2="163" y2="62" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="168" y1="52" x2="168" y2="62" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="173" y1="52" x2="173" y2="62" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="168" y1="52" x2="168" y2="80" stroke="rgba(19,49,73,0.2)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="163" y1="52" x2="163" y2="62" stroke="rgba(19,49,73,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="168" y1="52" x2="168" y2="62" stroke="rgba(19,49,73,0.15)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="173" y1="52" x2="173" y2="62" stroke="rgba(19,49,73,0.15)" stroke-width="1.5" stroke-linecap="round"/>
           <!-- Anti-inflammatory badge -->
           <rect x="28" y="30" width="72" height="16" rx="8" fill="rgba(140,76,201,0.15)" stroke="rgba(140,76,201,0.35)" stroke-width="1"/>
           <text x="64" y="41" fill="rgba(140,76,201,0.8)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">ANTI-INFLAM</text>
@@ -4539,7 +4539,7 @@
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Nutrition</span><span data-ar>التغذية</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">6 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">6 min</span>
         </div>
         <h3><span data-en>The Best Foods to Eat During Knee Recovery (and What to Avoid)</span><span data-ar>أفضل الأطعمة خلال تعافي الركبة (وما يجب تجنبه)</span></h3>
         <p><span data-en>Anti-inflammatory foods, protein for tissue repair, supplements that work — a practical nutrition guide for post-surgery recovery.</span><span data-ar>الأطعمة المضادة للالتهابات، البروتين لإصلاح الأنسجة، والمكملات الفعّالة — دليل تغذية عملي لما بعد الجراحة.</span></p>
@@ -4554,37 +4554,37 @@
       <div class="card-visual card-visual-1">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Exercise mat -->
-          <rect x="20" y="118" width="160" height="10" rx="4" fill="#1e2a1e" stroke="rgba(76,180,100,0.3)" stroke-width="1"/>
+          <rect x="20" y="118" width="160" height="10" rx="4" fill="#d5dce1" stroke="rgba(76,180,100,0.3)" stroke-width="1"/>
           <!-- Person lying down - torso -->
-          <rect x="70" y="90" width="72" height="28" rx="12" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+          <rect x="70" y="90" width="72" height="28" rx="12" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
           <!-- Head -->
-          <circle cx="152" cy="104" r="14" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-          <circle cx="157" cy="100" r="3" fill="rgba(201,168,76,0.3)"/>
+          <circle cx="152" cy="104" r="14" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
+          <circle cx="157" cy="100" r="3" fill="rgba(49,146,184,0.3)"/>
           <!-- Arm -->
-          <rect x="72" y="96" width="30" height="10" rx="5" fill="#2a2a2a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <rect x="72" y="96" width="30" height="10" rx="5" fill="#cdd6dd" stroke="rgba(19,49,73,0.06)" stroke-width="1"/>
           <!-- Bent knee leg (resting) -->
-          <path d="M70 108 Q55 118 48 118 Q36 118 34 118" stroke="#2a2a2a" stroke-width="14" stroke-linecap="round" fill="none"/>
-          <path d="M70 108 Q55 118 48 118 Q36 118 34 118" stroke="rgba(255,255,255,0.05)" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <path d="M70 108 Q55 118 48 118 Q36 118 34 118" stroke="#cdd6dd" stroke-width="14" stroke-linecap="round" fill="none"/>
+          <path d="M70 108 Q55 118 48 118 Q36 118 34 118" stroke="rgba(19,49,73,0.05)" stroke-width="13" stroke-linecap="round" fill="none"/>
           <!-- Straight leg raise (exercising leg) - elevated -->
-          <path d="M70 100 Q50 75 36 62" stroke="#2a2a2a" stroke-width="14" stroke-linecap="round" fill="none"/>
-          <path d="M70 100 Q50 75 36 62" stroke="rgba(201,168,76,0.15)" stroke-width="13" stroke-linecap="round" fill="none"/>
+          <path d="M70 100 Q50 75 36 62" stroke="#cdd6dd" stroke-width="14" stroke-linecap="round" fill="none"/>
+          <path d="M70 100 Q50 75 36 62" stroke="rgba(49,146,184,0.15)" stroke-width="13" stroke-linecap="round" fill="none"/>
           <!-- Motion arrow for leg raise -->
-          <path d="M42 68 Q32 55 28 45" stroke="rgba(201,168,76,0.55)" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
-          <polygon points="28,45 24,54 34,51" fill="rgba(201,168,76,0.55)"/>
+          <path d="M42 68 Q32 55 28 45" stroke="rgba(49,146,184,0.55)" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+          <polygon points="28,45 24,54 34,51" fill="rgba(49,146,184,0.55)"/>
           <!-- Exercise label -->
-          <text x="100" y="148" fill="rgba(201,168,76,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">STRAIGHT LEG RAISE</text>
+          <text x="100" y="148" fill="rgba(49,146,184,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">STRAIGHT LEG RAISE</text>
           <!-- Knee highlight -->
-          <ellipse cx="71" cy="104" rx="10" ry="9" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+          <ellipse cx="71" cy="104" rx="10" ry="9" fill="rgba(49,146,184,0.1)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
           <!-- Rep counter -->
-          <rect x="148" y="28" width="32" height="22" rx="6" fill="#161616" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
-          <text x="164" y="37" fill="rgba(201,168,76,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">REPS</text>
-          <text x="164" y="48" fill="#C9A84C" font-size="11" font-family="Cormorant Garamond,serif" text-anchor="middle" font-weight="600">10</text>
+          <rect x="148" y="28" width="32" height="22" rx="6" fill="#f6f9fb" stroke="rgba(49,146,184,0.35)" stroke-width="1"/>
+          <text x="164" y="37" fill="rgba(49,146,184,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">REPS</text>
+          <text x="164" y="48" fill="#3192b8" font-size="11" font-family="Cormorant Garamond,serif" text-anchor="middle" font-weight="600">10</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Physiotherapy</span><span data-ar>العلاج الطبيعي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">7 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">7 min</span>
         </div>
         <h3><span data-en>5 Safe Exercises to Do Alongside Your CPM Machine</span><span data-ar>٥ تمارين آمنة لممارستها جانب جهاز CPM</span></h3>
         <p><span data-en>Gentle exercises approved for post-surgical patients that complement CPM therapy and accelerate your range of motion recovery.</span><span data-ar>تمارين لطيفة معتمدة للمرضى بعد الجراحة تكمل علاج CPM وتسرّع تعافي نطاق الحركة.</span></p>
@@ -4599,28 +4599,28 @@
     <div class="article-card reveal" data-category="cpm" onclick="openArticle('cpm-hours')">
       <div class="card-visual card-visual-2">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
-          <circle cx="100" cy="85" r="55" fill="#1a1a1a" stroke="rgba(201,168,76,0.35)" stroke-width="1.5"/>
-          <circle cx="100" cy="85" r="46" fill="#161616" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+          <circle cx="100" cy="85" r="55" fill="#f9fbfc" stroke="rgba(49,146,184,0.35)" stroke-width="1.5"/>
+          <circle cx="100" cy="85" r="46" fill="#f6f9fb" stroke="rgba(49,146,184,0.15)" stroke-width="1"/>
           <!-- Hour ticks -->
-          <line x1="100" y1="42" x2="100" y2="50" stroke="rgba(201,168,76,0.5)" stroke-width="2" stroke-linecap="round"/>
-          <line x1="137" y1="53" x2="132" y2="60" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="143" y1="85" x2="135" y2="85" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="100" y1="128" x2="100" y2="120" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="63" y1="53" x2="68" y2="60" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="57" y1="85" x2="65" y2="85" stroke="rgba(201,168,76,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="100" y1="42" x2="100" y2="50" stroke="rgba(49,146,184,0.5)" stroke-width="2" stroke-linecap="round"/>
+          <line x1="137" y1="53" x2="132" y2="60" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="143" y1="85" x2="135" y2="85" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="100" y1="128" x2="100" y2="120" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="63" y1="53" x2="68" y2="60" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="57" y1="85" x2="65" y2="85" stroke="rgba(49,146,184,0.3)" stroke-width="1.5" stroke-linecap="round"/>
           <!-- Hands -->
-          <line x1="100" y1="85" x2="100" y2="52" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="100" y1="85" x2="122" y2="85" stroke="rgba(201,168,76,0.7)" stroke-width="2" stroke-linecap="round"/>
-          <circle cx="100" cy="85" r="4" fill="#C9A84C"/>
+          <line x1="100" y1="85" x2="100" y2="52" stroke="#3192b8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="100" y1="85" x2="122" y2="85" stroke="rgba(49,146,184,0.7)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="100" cy="85" r="4" fill="#3192b8"/>
           <!-- Badge -->
-          <rect x="62" y="100" width="76" height="18" rx="9" fill="rgba(201,168,76,0.12)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-          <text x="100" y="113" fill="#C9A84C" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">2–4 HRS / DAY</text>
+          <rect x="62" y="100" width="76" height="18" rx="9" fill="rgba(49,146,184,0.12)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
+          <text x="100" y="113" fill="#3192b8" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">2–4 HRS / DAY</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>CPM Guide</span><span data-ar>دليل CPM</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>How Many Hours a Day Should You Use a CPM Machine?</span><span data-ar>كم ساعة يومياً يجب استخدام جهاز CPM؟</span></h3>
         <p><span data-en>Sessions too short won't build range. Sessions too long cause fatigue and soreness. Find the clinical sweet spot for your recovery stage.</span><span data-ar>الجلسات القصيرة لن تبني النطاق. الجلسات الطويلة تسبب التعب. اكتشف النقطة السريرية المثالية لمرحلة تعافيك.</span></p>
@@ -4636,31 +4636,31 @@
       <div class="card-visual card-visual-3">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Scale base -->
-          <rect x="90" y="128" width="20" height="16" rx="3" fill="#1e1e1e" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
-          <rect x="70" y="140" width="60" height="6" rx="3" fill="rgba(201,168,76,0.25)"/>
+          <rect x="90" y="128" width="20" height="16" rx="3" fill="#fcfdfe" stroke="rgba(49,146,184,0.3)" stroke-width="1"/>
+          <rect x="70" y="140" width="60" height="6" rx="3" fill="rgba(49,146,184,0.25)"/>
           <!-- Balance beam -->
-          <rect x="44" y="70" width="112" height="5" rx="2.5" fill="rgba(201,168,76,0.5)" transform="rotate(-6 100 72)"/>
+          <rect x="44" y="70" width="112" height="5" rx="2.5" fill="rgba(49,146,184,0.5)" transform="rotate(-6 100 72)"/>
           <!-- Left pan (Rental - lighter/higher) -->
-          <line x1="58" y1="67" x2="44" y2="90" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <line x1="58" y1="67" x2="72" y2="90" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <ellipse cx="58" cy="93" rx="28" ry="8" fill="#1e1e1e" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <text x="58" y="97" fill="rgba(201,168,76,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">RENT</text>
+          <line x1="58" y1="67" x2="44" y2="90" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <line x1="58" y1="67" x2="72" y2="90" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <ellipse cx="58" cy="93" rx="28" ry="8" fill="#fcfdfe" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <text x="58" y="97" fill="rgba(49,146,184,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">RENT</text>
           <text x="58" y="108" fill="#4CAF82" font-size="9" font-family="Jost,sans-serif" text-anchor="middle">499</text>
           <!-- Right pan (Buying - heavier/lower) -->
-          <line x1="142" y1="63" x2="128" y2="100" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <line x1="142" y1="63" x2="156" y2="100" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
-          <ellipse cx="142" cy="103" rx="28" ry="8" fill="#1e1e1e" stroke="rgba(201,76,76,0.4)" stroke-width="1.5"/>
+          <line x1="142" y1="63" x2="128" y2="100" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <line x1="142" y1="63" x2="156" y2="100" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
+          <ellipse cx="142" cy="103" rx="28" ry="8" fill="#fcfdfe" stroke="rgba(201,76,76,0.4)" stroke-width="1.5"/>
           <text x="142" y="107" fill="rgba(201,76,76,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">BUY</text>
           <text x="142" y="118" fill="rgba(201,76,76,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle">25,000</text>
           <!-- Pivot -->
-          <circle cx="100" cy="72" r="5" fill="#C9A84C"/>
-          <text x="100" y="148" fill="rgba(201,168,76,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">AED COMPARISON</text>
+          <circle cx="100" cy="72" r="5" fill="#3192b8"/>
+          <text x="100" y="148" fill="rgba(49,146,184,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">AED COMPARISON</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>CPM Guide</span><span data-ar>دليل CPM</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">4 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">4 min</span>
         </div>
         <h3><span data-en>CPM Machine Rental vs. Buying in Dubai: Full Cost Breakdown</span><span data-ar>إيجار جهاز CPM مقابل الشراء في دبي: تفصيل كامل للتكلفة</span></h3>
         <p><span data-en>Most patients only need a CPM machine for 4–8 weeks. Here's why renting almost always beats buying outright in the UAE.</span><span data-ar>معظم المرضى يحتاجون الجهاز من 4 إلى 8 أسابيع فقط. إليك لماذا الإيجار يتفوق دائماً على الشراء في الإمارات.</span></p>
@@ -4676,11 +4676,11 @@
       <div class="card-visual card-visual-4">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Knee joint diagram -->
-          <ellipse cx="100" cy="88" rx="42" ry="48" fill="#1a1a1a" stroke="rgba(76,175,130,0.35)" stroke-width="1.5"/>
+          <ellipse cx="100" cy="88" rx="42" ry="48" fill="#f9fbfc" stroke="rgba(76,175,130,0.35)" stroke-width="1.5"/>
           <!-- Femur -->
-          <rect x="85" y="40" width="30" height="36" rx="8" fill="#222" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+          <rect x="85" y="40" width="30" height="36" rx="8" fill="#d7dee3" stroke="rgba(49,146,184,0.3)" stroke-width="1"/>
           <!-- Tibia -->
-          <rect x="85" y="100" width="30" height="36" rx="8" fill="#222" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+          <rect x="85" y="100" width="30" height="36" rx="8" fill="#d7dee3" stroke="rgba(49,146,184,0.3)" stroke-width="1"/>
           <!-- ACL ligament (X shape) -->
           <line x1="90" y1="76" x2="110" y2="100" stroke="#4CAF82" stroke-width="2.5" stroke-linecap="round"/>
           <line x1="110" y1="76" x2="90" y2="100" stroke="rgba(76,175,130,0.5)" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 2"/>
@@ -4690,14 +4690,14 @@
           <!-- Label -->
           <text x="100" y="152" fill="rgba(76,175,130,0.5)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">RECONSTRUCTION</text>
           <!-- Arrows -->
-          <path d="M148 70 Q158 88 148 106" stroke="rgba(201,168,76,0.4)" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
-          <polygon points="148,106 142,98 153,98" fill="rgba(201,168,76,0.4)"/>
+          <path d="M148 70 Q158 88 148 106" stroke="rgba(49,146,184,0.4)" stroke-width="1.5" fill="none" stroke-dasharray="3 2"/>
+          <polygon points="148,106 142,98 153,98" fill="rgba(49,146,184,0.4)"/>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>CPM Guide</span><span data-ar>دليل CPM</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">6 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">6 min</span>
         </div>
         <h3><span data-en>CPM Therapy After ACL Reconstruction: What to Expect</span><span data-ar>علاج CPM بعد إعادة بناء الرباط الصليبي: ما تتوقعه</span></h3>
         <p><span data-en>ACL recovery differs from knee replacement. We cover CPM protocols, angle progression, and common mistakes to avoid after ligament surgery.</span><span data-ar>يختلف تعافي الرباط الصليبي عن استبدال الركبة. نغطي بروتوكولات CPM، وتقدم الزاوية، والأخطاء الشائعة التي يجب تجنبها.</span></p>
@@ -4713,23 +4713,23 @@
       <div class="card-visual card-visual-5">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Bed -->
-          <rect x="20" y="100" width="160" height="12" rx="5" fill="#1c1c1c" stroke="rgba(100,140,220,0.25)" stroke-width="1"/>
-          <rect x="28" y="88" width="144" height="14" rx="4" fill="#1e1e1e" stroke="rgba(100,140,220,0.15)" stroke-width="1"/>
+          <rect x="20" y="100" width="160" height="12" rx="5" fill="#fbfcfd" stroke="rgba(100,140,220,0.25)" stroke-width="1"/>
+          <rect x="28" y="88" width="144" height="14" rx="4" fill="#fcfdfe" stroke="rgba(100,140,220,0.15)" stroke-width="1"/>
           <!-- Pillow -->
-          <ellipse cx="148" cy="85" rx="22" ry="12" fill="#222" stroke="rgba(100,140,220,0.3)" stroke-width="1.5"/>
+          <ellipse cx="148" cy="85" rx="22" ry="12" fill="#d7dee3" stroke="rgba(100,140,220,0.3)" stroke-width="1.5"/>
           <!-- Person (lying) -->
-          <circle cx="148" cy="74" r="11" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-          <rect x="68" y="80" width="68" height="16" rx="8" fill="#252525" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+          <circle cx="148" cy="74" r="11" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
+          <rect x="68" y="80" width="68" height="16" rx="8" fill="#d3dbe1" stroke="rgba(49,146,184,0.15)" stroke-width="1"/>
           <!-- Leg elevated on pillow -->
-          <rect x="28" y="76" width="52" height="12" rx="6" fill="#2a2a2a" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-          <ellipse cx="24" cy="82" rx="14" ry="8" fill="#222" stroke="rgba(100,140,220,0.3)" stroke-width="1"/>
+          <rect x="28" y="76" width="52" height="12" rx="6" fill="#cdd6dd" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
+          <ellipse cx="24" cy="82" rx="14" ry="8" fill="#d7dee3" stroke="rgba(100,140,220,0.3)" stroke-width="1"/>
           <!-- Moon -->
           <path d="M88 36 Q76 42 76 54 Q76 66 88 72 Q72 70 68 58 Q64 44 76 36 Z" fill="rgba(100,140,220,0.3)" stroke="rgba(100,140,220,0.5)" stroke-width="1"/>
           <!-- Stars -->
-          <circle cx="108" cy="30" r="2" fill="rgba(255,255,255,0.4)"/>
-          <circle cx="120" cy="42" r="1.5" fill="rgba(255,255,255,0.3)"/>
-          <circle cx="132" cy="26" r="1" fill="rgba(255,255,255,0.4)"/>
-          <circle cx="98" cy="48" r="1" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="108" cy="30" r="2" fill="rgba(19,49,73,0.4)"/>
+          <circle cx="120" cy="42" r="1.5" fill="rgba(19,49,73,0.3)"/>
+          <circle cx="132" cy="26" r="1" fill="rgba(19,49,73,0.4)"/>
+          <circle cx="98" cy="48" r="1" fill="rgba(19,49,73,0.3)"/>
           <!-- Z's -->
           <text x="115" y="55" fill="rgba(100,140,220,0.5)" font-size="12" font-family="Jost,sans-serif" font-weight="600">z</text>
           <text x="125" y="44" fill="rgba(100,140,220,0.4)" font-size="16" font-family="Jost,sans-serif" font-weight="600">z</text>
@@ -4739,7 +4739,7 @@
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Recovery Tips</span><span data-ar>نصائح التعافي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>How to Sleep Comfortably After Knee Surgery</span><span data-ar>كيف تنام بشكل مريح بعد جراحة الركبة</span></h3>
         <p><span data-en>The right sleeping position speeds healing and reduces overnight swelling. We cover pillow placement, positions to avoid, and when you can sleep normally again.</span><span data-ar>وضعية النوم الصحيحة تسرع الشفاء وتقلل التورم الليلي. نغطي وضع الوسادة، والأوضاع التي يجب تجنبها، ومتى يمكنك النوم بشكل طبيعي.</span></p>
@@ -4755,26 +4755,26 @@
       <div class="card-visual card-visual-1">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Steering wheel -->
-          <circle cx="100" cy="85" r="48" fill="#1a1a1a" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
-          <circle cx="100" cy="85" r="38" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="4"/>
-          <circle cx="100" cy="85" r="12" fill="#1e1e1e" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+          <circle cx="100" cy="85" r="48" fill="#f9fbfc" stroke="rgba(49,146,184,0.3)" stroke-width="1.5"/>
+          <circle cx="100" cy="85" r="38" fill="none" stroke="rgba(49,146,184,0.5)" stroke-width="4"/>
+          <circle cx="100" cy="85" r="12" fill="#fcfdfe" stroke="rgba(49,146,184,0.4)" stroke-width="1.5"/>
           <!-- Spokes -->
-          <line x1="100" y1="73" x2="100" y2="47" stroke="rgba(201,168,76,0.5)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="111" y1="94" x2="133" y2="107" stroke="rgba(201,168,76,0.5)" stroke-width="3" stroke-linecap="round"/>
-          <line x1="89" y1="94" x2="67" y2="107" stroke="rgba(201,168,76,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="100" y1="73" x2="100" y2="47" stroke="rgba(49,146,184,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="111" y1="94" x2="133" y2="107" stroke="rgba(49,146,184,0.5)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="89" y1="94" x2="67" y2="107" stroke="rgba(49,146,184,0.5)" stroke-width="3" stroke-linecap="round"/>
           <!-- Cross / no symbol -->
           <circle cx="152" cy="36" r="16" fill="rgba(201,76,76,0.15)" stroke="rgba(201,76,76,0.5)" stroke-width="2"/>
           <line x1="143" y1="27" x2="161" y2="45" stroke="rgba(201,76,76,0.8)" stroke-width="2.5" stroke-linecap="round"/>
           <line x1="161" y1="27" x2="143" y2="45" stroke="rgba(201,76,76,0.8)" stroke-width="2.5" stroke-linecap="round"/>
           <!-- Week badge -->
-          <rect x="58" y="140" width="84" height="16" rx="8" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.35)" stroke-width="1"/>
-          <text x="100" y="152" fill="rgba(201,168,76,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">WAIT 6–8 WEEKS</text>
+          <rect x="58" y="140" width="84" height="16" rx="8" fill="rgba(49,146,184,0.1)" stroke="rgba(49,146,184,0.35)" stroke-width="1"/>
+          <text x="100" y="152" fill="rgba(49,146,184,0.8)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">WAIT 6–8 WEEKS</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Recovery Tips</span><span data-ar>نصائح التعافي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">4 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">4 min</span>
         </div>
         <h3><span data-en>When Can You Drive After Knee Replacement Surgery?</span><span data-ar>متى يمكنك قيادة السيارة بعد جراحة استبدال الركبة؟</span></h3>
         <p><span data-en>Most surgeons say 6–8 weeks — but it depends on which knee, your medication, and your reaction times. Here's what the evidence says.</span><span data-ar>معظم الجراحين يقولون 6 إلى 8 أسابيع — لكنه يعتمد على الركبة ودوائك وردود أفعالك. إليك ما تقوله الأدلة.</span></p>
@@ -4791,34 +4791,34 @@
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Three exercise panels -->
           <!-- Panel 1: Quad set -->
-          <rect x="16" y="40" width="50" height="80" rx="8" fill="#1a1a1a" stroke="rgba(76,175,130,0.3)" stroke-width="1.2"/>
+          <rect x="16" y="40" width="50" height="80" rx="8" fill="#f9fbfc" stroke="rgba(76,175,130,0.3)" stroke-width="1.2"/>
           <text x="41" y="58" fill="rgba(76,175,130,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">QUAD</text>
           <text x="41" y="68" fill="rgba(76,175,130,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">SET</text>
-          <line x1="25" y1="85" x2="57" y2="85" stroke="rgba(201,168,76,0.5)" stroke-width="10" stroke-linecap="round"/>
-          <line x1="25" y1="100" x2="50" y2="100" stroke="rgba(255,255,255,0.08)" stroke-width="10" stroke-linecap="round"/>
+          <line x1="25" y1="85" x2="57" y2="85" stroke="rgba(49,146,184,0.5)" stroke-width="10" stroke-linecap="round"/>
+          <line x1="25" y1="100" x2="50" y2="100" stroke="rgba(19,49,73,0.08)" stroke-width="10" stroke-linecap="round"/>
           <text x="41" y="128" fill="rgba(76,175,130,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">×10</text>
           <!-- Panel 2: Heel slide -->
-          <rect x="75" y="40" width="50" height="80" rx="8" fill="#1a1a1a" stroke="rgba(201,168,76,0.3)" stroke-width="1.2"/>
-          <text x="100" y="58" fill="rgba(201,168,76,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">HEEL</text>
-          <text x="100" y="68" fill="rgba(201,168,76,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">SLIDE</text>
-          <path d="M84 90 Q100 75 116 90" stroke="rgba(201,168,76,0.6)" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
-          <polygon points="116,90 110,84 116,82" fill="rgba(201,168,76,0.6)"/>
-          <text x="100" y="128" fill="rgba(201,168,76,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">×15</text>
+          <rect x="75" y="40" width="50" height="80" rx="8" fill="#f9fbfc" stroke="rgba(49,146,184,0.3)" stroke-width="1.2"/>
+          <text x="100" y="58" fill="rgba(49,146,184,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">HEEL</text>
+          <text x="100" y="68" fill="rgba(49,146,184,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">SLIDE</text>
+          <path d="M84 90 Q100 75 116 90" stroke="rgba(49,146,184,0.6)" stroke-width="2" fill="none" stroke-dasharray="4 2"/>
+          <polygon points="116,90 110,84 116,82" fill="rgba(49,146,184,0.6)"/>
+          <text x="100" y="128" fill="rgba(49,146,184,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">×15</text>
           <!-- Panel 3: Ankle pump -->
-          <rect x="134" y="40" width="50" height="80" rx="8" fill="#1a1a1a" stroke="rgba(100,140,220,0.3)" stroke-width="1.2"/>
+          <rect x="134" y="40" width="50" height="80" rx="8" fill="#f9fbfc" stroke="rgba(100,140,220,0.3)" stroke-width="1.2"/>
           <text x="159" y="58" fill="rgba(100,140,220,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">ANKLE</text>
           <text x="159" y="68" fill="rgba(100,140,220,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="0.5">PUMP</text>
           <path d="M148 95 L159 80 L170 95" stroke="rgba(100,140,220,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
           <path d="M148 100 L159 115 L170 100" stroke="rgba(100,140,220,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
           <text x="159" y="128" fill="rgba(100,140,220,0.5)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">×20</text>
           <!-- Label -->
-          <text x="100" y="150" fill="rgba(201,168,76,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">WEEK 1 PROTOCOL</text>
+          <text x="100" y="150" fill="rgba(49,146,184,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="2">WEEK 1 PROTOCOL</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Physiotherapy</span><span data-ar>العلاج الطبيعي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">6 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">6 min</span>
         </div>
         <h3><span data-en>Quad Sets, Heel Slides &amp; Ankle Pumps: Your Week 1 Protocol</span><span data-ar>تمارين الأسبوع الأول: شد الرباعية، انزلاق الكعب وضخ الكاحل</span></h3>
         <p><span data-en>The three exercises every knee surgeon recommends in the first week. How to do them correctly, how many reps, and what to do if they hurt.</span><span data-ar>التمارين الثلاثة التي يوصي بها كل جراح ركبة في الأسبوع الأول. كيفية أدائها بشكل صحيح، وعدد التكرارات، وماذا تفعل إذا كانت مؤلمة.</span></p>
@@ -4834,36 +4834,36 @@
       <div class="card-visual card-visual-3">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Balance board -->
-          <ellipse cx="100" cy="132" rx="50" ry="8" fill="#1e1e1e" stroke="rgba(201,168,76,0.25)" stroke-width="1"/>
-          <path d="M60 126 Q100 118 140 126" stroke="rgba(201,168,76,0.4)" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <ellipse cx="100" cy="132" rx="50" ry="8" fill="#fcfdfe" stroke="rgba(49,146,184,0.25)" stroke-width="1"/>
+          <path d="M60 126 Q100 118 140 126" stroke="rgba(49,146,184,0.4)" stroke-width="3" stroke-linecap="round" fill="none"/>
           <!-- Pivot -->
-          <ellipse cx="100" cy="130" rx="10" ry="5" fill="#C9A84C" opacity="0.6"/>
+          <ellipse cx="100" cy="130" rx="10" ry="5" fill="#3192b8" opacity="0.6"/>
           <!-- Person standing -->
           <!-- Feet -->
-          <ellipse cx="88" cy="124" rx="8" ry="4" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-          <ellipse cx="112" cy="124" rx="8" ry="4" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+          <ellipse cx="88" cy="124" rx="8" ry="4" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
+          <ellipse cx="112" cy="124" rx="8" ry="4" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
           <!-- Legs -->
-          <rect x="83" y="96" width="10" height="30" rx="5" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
-          <rect x="107" y="96" width="10" height="30" rx="5" fill="#252525" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+          <rect x="83" y="96" width="10" height="30" rx="5" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
+          <rect x="107" y="96" width="10" height="30" rx="5" fill="#d3dbe1" stroke="rgba(49,146,184,0.2)" stroke-width="1"/>
           <!-- Knee circles -->
-          <circle cx="88" cy="98" r="6" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-          <circle cx="112" cy="98" r="6" fill="rgba(201,168,76,0.1)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
+          <circle cx="88" cy="98" r="6" fill="rgba(49,146,184,0.1)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
+          <circle cx="112" cy="98" r="6" fill="rgba(49,146,184,0.1)" stroke="rgba(49,146,184,0.4)" stroke-width="1"/>
           <!-- Torso -->
-          <rect x="82" y="62" width="36" height="36" rx="12" fill="#252525" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+          <rect x="82" y="62" width="36" height="36" rx="12" fill="#d3dbe1" stroke="rgba(49,146,184,0.15)" stroke-width="1"/>
           <!-- Arms out for balance -->
-          <line x1="82" y1="74" x2="52" y2="84" stroke="#252525" stroke-width="8" stroke-linecap="round"/>
-          <line x1="118" y1="74" x2="148" y2="84" stroke="#252525" stroke-width="8" stroke-linecap="round"/>
+          <line x1="82" y1="74" x2="52" y2="84" stroke="#d3dbe1" stroke-width="8" stroke-linecap="round"/>
+          <line x1="118" y1="74" x2="148" y2="84" stroke="#d3dbe1" stroke-width="8" stroke-linecap="round"/>
           <!-- Head -->
-          <circle cx="100" cy="50" r="14" fill="#252525" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
+          <circle cx="100" cy="50" r="14" fill="#d3dbe1" stroke="rgba(49,146,184,0.15)" stroke-width="1"/>
           <!-- Balance arrows -->
-          <path d="M52 82 Q44 76 50 70" stroke="rgba(201,168,76,0.4)" stroke-width="1.5" fill="none"/>
-          <path d="M148 82 Q156 76 150 70" stroke="rgba(201,168,76,0.4)" stroke-width="1.5" fill="none"/>
+          <path d="M52 82 Q44 76 50 70" stroke="rgba(49,146,184,0.4)" stroke-width="1.5" fill="none"/>
+          <path d="M148 82 Q156 76 150 70" stroke="rgba(49,146,184,0.4)" stroke-width="1.5" fill="none"/>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Physiotherapy</span><span data-ar>العلاج الطبيعي</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>Balance &amp; Stability Training After Knee Replacement</span><span data-ar>تدريب التوازن والاستقرار بعد استبدال الركبة</span></h3>
         <p><span data-en>Proprioception — your knee's ability to sense position — is disrupted after surgery. These exercises rebuild it safely from week 4 onwards.</span><span data-ar>الإحساس بالوضعية يتأثر بعد الجراحة. هذه التمارين تعيد بناءه بأمان من الأسبوع الرابع فصاعداً.</span></p>
@@ -4879,26 +4879,26 @@
       <div class="card-visual card-visual-4">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Supplement bottle -->
-          <rect x="72" y="48" width="56" height="80" rx="8" fill="#1a1a1a" stroke="rgba(140,200,80,0.4)" stroke-width="1.5"/>
-          <rect x="80" y="36" width="40" height="16" rx="6" fill="#222" stroke="rgba(140,200,80,0.3)" stroke-width="1"/>
+          <rect x="72" y="48" width="56" height="80" rx="8" fill="#f9fbfc" stroke="rgba(140,200,80,0.4)" stroke-width="1.5"/>
+          <rect x="80" y="36" width="40" height="16" rx="6" fill="#d7dee3" stroke="rgba(140,200,80,0.3)" stroke-width="1"/>
           <!-- Label -->
           <rect x="78" y="62" width="44" height="30" rx="4" fill="rgba(140,200,80,0.1)" stroke="rgba(140,200,80,0.3)" stroke-width="1"/>
           <text x="100" y="76" fill="rgba(140,200,80,0.9)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="700">VIT C</text>
-          <text x="100" y="87" fill="rgba(201,168,76,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">COLLAGEN</text>
+          <text x="100" y="87" fill="rgba(49,146,184,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">COLLAGEN</text>
           <!-- Pills spilling out -->
           <ellipse cx="60" cy="118" rx="10" ry="6" fill="rgba(140,200,80,0.4)" stroke="rgba(140,200,80,0.6)" stroke-width="1" transform="rotate(-20 60 118)"/>
-          <ellipse cx="140" cy="112" rx="10" ry="6" fill="rgba(201,168,76,0.4)" stroke="rgba(201,168,76,0.6)" stroke-width="1" transform="rotate(15 140 112)"/>
+          <ellipse cx="140" cy="112" rx="10" ry="6" fill="rgba(49,146,184,0.4)" stroke="rgba(49,146,184,0.6)" stroke-width="1" transform="rotate(15 140 112)"/>
           <ellipse cx="148" cy="128" rx="10" ry="6" fill="rgba(140,200,80,0.3)" stroke="rgba(140,200,80,0.5)" stroke-width="1" transform="rotate(-10 148 128)"/>
-          <ellipse cx="52" cy="132" rx="10" ry="6" fill="rgba(201,168,76,0.3)" stroke="rgba(201,168,76,0.5)" stroke-width="1" transform="rotate(25 52 132)"/>
+          <ellipse cx="52" cy="132" rx="10" ry="6" fill="rgba(49,146,184,0.3)" stroke="rgba(49,146,184,0.5)" stroke-width="1" transform="rotate(25 52 132)"/>
           <!-- Healing sparkles -->
           <path d="M36 60 L38 54 L40 60 L46 62 L40 64 L38 70 L36 64 L30 62 Z" fill="rgba(140,200,80,0.4)"/>
-          <path d="M156 52 L157.5 47 L159 52 L164 53.5 L159 55 L157.5 60 L156 55 L151 53.5 Z" fill="rgba(201,168,76,0.4)"/>
+          <path d="M156 52 L157.5 47 L159 52 L164 53.5 L159 55 L157.5 60 L156 55 L151 53.5 Z" fill="rgba(49,146,184,0.4)"/>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Nutrition</span><span data-ar>التغذية</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>Vitamin C &amp; Collagen: Essential Nutrients for Wound Healing</span><span data-ar>فيتامين C والكولاجين: عناصر غذائية أساسية لشفاء الجروح</span></h3>
         <p><span data-en>Surgical incisions heal faster with the right micronutrients. Learn how much Vitamin C and collagen to take, and which forms are best absorbed.</span><span data-ar>تشفى شقوق الجراحة بشكل أسرع مع العناصر الدقيقة الصحيحة. تعرف على المقدار المناسب من فيتامين C والكولاجين وأفضل أشكالهما للامتصاص.</span></p>
@@ -4914,24 +4914,24 @@
       <div class="card-visual card-visual-5">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Turmeric root shape -->
-          <path d="M55 100 Q40 85 50 70 Q60 55 75 65 Q80 55 90 60 Q95 50 105 58 Q115 45 125 60 Q140 55 145 70 Q155 80 145 95 Q140 110 120 112 Q100 118 80 112 Q60 115 55 100Z" fill="rgba(220,160,30,0.2)" stroke="rgba(220,160,30,0.5)" stroke-width="1.5"/>
+          <path d="M55 100 Q40 85 50 70 Q60 55 75 65 Q80 55 90 60 Q95 50 105 58 Q115 45 125 60 Q140 55 145 70 Q155 80 145 95 Q140 110 120 112 Q100 118 80 112 Q60 115 55 100Z" fill="rgba(57,161,203,0.2)" stroke="rgba(57,161,203,0.5)" stroke-width="1.5"/>
           <!-- Turmeric colour fill -->
-          <ellipse cx="100" cy="88" rx="40" ry="22" fill="rgba(220,160,30,0.15)"/>
+          <ellipse cx="100" cy="88" rx="40" ry="22" fill="rgba(57,161,203,0.15)"/>
           <!-- Ginger piece -->
-          <path d="M82 105 Q70 115 68 128 Q66 138 78 138 Q88 138 92 128 Q94 118 88 108Z" fill="rgba(200,150,80,0.3)" stroke="rgba(200,150,80,0.5)" stroke-width="1.2"/>
-          <path d="M108 108 Q120 118 120 130 Q120 140 110 140 Q100 140 98 130 Q96 118 104 110Z" fill="rgba(200,150,80,0.25)" stroke="rgba(200,150,80,0.4)" stroke-width="1.2"/>
+          <path d="M82 105 Q70 115 68 128 Q66 138 78 138 Q88 138 92 128 Q94 118 88 108Z" fill="rgba(48,144,182,0.3)" stroke="rgba(48,144,182,0.5)" stroke-width="1.2"/>
+          <path d="M108 108 Q120 118 120 130 Q120 140 110 140 Q100 140 98 130 Q96 118 104 110Z" fill="rgba(48,144,182,0.25)" stroke="rgba(48,144,182,0.4)" stroke-width="1.2"/>
           <!-- Sparkle / anti-inflam badge -->
-          <rect x="28" y="30" width="90" height="18" rx="9" fill="rgba(220,160,30,0.15)" stroke="rgba(220,160,30,0.45)" stroke-width="1"/>
-          <text x="73" y="43" fill="rgba(220,160,30,0.9)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">ANTI-INFLAMMATORY</text>
+          <rect x="28" y="30" width="90" height="18" rx="9" fill="rgba(57,161,203,0.15)" stroke="rgba(57,161,203,0.45)" stroke-width="1"/>
+          <text x="73" y="43" fill="rgba(57,161,203,0.9)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">ANTI-INFLAMMATORY</text>
           <!-- Labels -->
-          <text x="72" y="82" fill="rgba(220,160,30,0.7)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">TURMERIC</text>
-          <text x="100" y="148" fill="rgba(200,150,80,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">+ GINGER</text>
+          <text x="72" y="82" fill="rgba(57,161,203,0.7)" font-size="9" font-family="Jost,sans-serif" text-anchor="middle" font-weight="600">TURMERIC</text>
+          <text x="100" y="148" fill="rgba(48,144,182,0.6)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">+ GINGER</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Nutrition</span><span data-ar>التغذية</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">4 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">4 min</span>
         </div>
         <h3><span data-en>Turmeric &amp; Ginger: Nature's Anti-Inflammatories for Knee Recovery</span><span data-ar>الكركم والزنجبيل: مضادات الالتهاب الطبيعية لتعافي الركبة</span></h3>
         <p><span data-en>Curcumin in turmeric and gingerols in ginger have measurable anti-inflammatory effects. Here's how to use them effectively alongside your recovery plan.</span><span data-ar>يمتلك الكركمين في الكركم والجينجيرول في الزنجبيل تأثيرات مضادة للالتهاب قابلة للقياس. إليك كيفية استخدامهما بفعالية.</span></p>
@@ -4967,7 +4967,7 @@
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Nutrition</span><span data-ar>التغذية</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">3 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">3 min</span>
         </div>
         <h3><span data-en>How Much Water Should You Drink After Knee Surgery?</span><span data-ar>كم من الماء يجب أن تشرب بعد جراحة الركبة؟</span></h3>
         <p><span data-en>Dehydration slows healing, thickens blood, and increases clot risk. Here's the exact hydration target for post-surgical patients and how to hit it.</span><span data-ar>الجفاف يبطئ الشفاء ويزيد من خطر الجلطات. إليك الهدف الدقيق لترطيب المرضى بعد الجراحة وكيفية الوصول إليه.</span></p>
@@ -4983,33 +4983,33 @@
       <div class="card-visual card-visual-2">
         <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:88%;position:relative;z-index:2;">
           <!-- Protein bar chart -->
-          <rect x="28" y="120" width="144" height="3" rx="1.5" fill="rgba(255,255,255,0.1)"/>
+          <rect x="28" y="120" width="144" height="3" rx="1.5" fill="rgba(19,49,73,0.1)"/>
           <!-- Bar: Breakfast -->
           <rect x="36" y="80" width="24" height="40" rx="4" fill="rgba(220,120,80,0.35)" stroke="rgba(220,120,80,0.5)" stroke-width="1"/>
           <text x="48" y="76" fill="rgba(220,120,80,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">30g</text>
-          <text x="48" y="135" fill="rgba(255,255,255,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">BRK</text>
+          <text x="48" y="135" fill="rgba(19,49,73,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">BRK</text>
           <!-- Bar: Lunch (tallest) -->
-          <rect x="72" y="55" width="24" height="65" rx="4" fill="rgba(201,168,76,0.5)" stroke="rgba(201,168,76,0.7)" stroke-width="1"/>
-          <text x="84" y="51" fill="#C9A84C" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">40g</text>
-          <text x="84" y="135" fill="rgba(255,255,255,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">LCH</text>
+          <rect x="72" y="55" width="24" height="65" rx="4" fill="rgba(49,146,184,0.5)" stroke="rgba(49,146,184,0.7)" stroke-width="1"/>
+          <text x="84" y="51" fill="#3192b8" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">40g</text>
+          <text x="84" y="135" fill="rgba(19,49,73,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">LCH</text>
           <!-- Bar: Post CPM -->
           <rect x="108" y="65" width="24" height="55" rx="4" fill="rgba(76,175,130,0.4)" stroke="rgba(76,175,130,0.6)" stroke-width="1"/>
           <text x="120" y="61" fill="rgba(76,175,130,0.8)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">35g</text>
-          <text x="120" y="135" fill="rgba(255,255,255,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">CPM</text>
+          <text x="120" y="135" fill="rgba(19,49,73,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">CPM</text>
           <!-- Bar: Dinner -->
           <rect x="144" y="85" width="24" height="35" rx="4" fill="rgba(100,140,220,0.35)" stroke="rgba(100,140,220,0.5)" stroke-width="1"/>
           <text x="156" y="81" fill="rgba(100,140,220,0.7)" font-size="7" font-family="Jost,sans-serif" text-anchor="middle">25g</text>
-          <text x="156" y="135" fill="rgba(255,255,255,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">DIN</text>
+          <text x="156" y="135" fill="rgba(19,49,73,0.3)" font-size="6" font-family="Jost,sans-serif" text-anchor="middle">DIN</text>
           <!-- Target line -->
-          <line x1="28" y1="72" x2="172" y2="72" stroke="rgba(201,168,76,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
-          <text x="172" y="70" fill="rgba(201,168,76,0.5)" font-size="7" font-family="Jost,sans-serif">130g</text>
-          <text x="100" y="152" fill="rgba(201,168,76,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">DAILY PROTEIN TARGET</text>
+          <line x1="28" y1="72" x2="172" y2="72" stroke="rgba(49,146,184,0.3)" stroke-width="1" stroke-dasharray="4 3"/>
+          <text x="172" y="70" fill="rgba(49,146,184,0.5)" font-size="7" font-family="Jost,sans-serif">130g</text>
+          <text x="100" y="152" fill="rgba(49,146,184,0.4)" font-size="8" font-family="Jost,sans-serif" text-anchor="middle" letter-spacing="1">DAILY PROTEIN TARGET</text>
         </svg>
       </div>
       <div class="card-body">
         <div class="article-meta">
           <span class="article-tag"><span data-en>Nutrition</span><span data-ar>التغذية</span></span>
-          <span class="article-read-time" style="font-size:0.75rem;color:#666">5 min</span>
+          <span class="article-read-time" style="font-size:0.75rem;color:#879cab">5 min</span>
         </div>
         <h3><span data-en>Protein Timing: When &amp; How Much to Eat for Muscle Repair</span><span data-ar>توقيت البروتين: متى وكم تأكل لإصلاح العضلات</span></h3>
         <p><span data-en>Muscle loss accelerates after surgery. Spreading 120–140g of protein across 4 meals — including one post-CPM session — maximises tissue repair.</span><span data-ar>فقدان العضلات يتسارع بعد الجراحة. توزيع 120-140 جرام بروتين على 4 وجبات — بما فيها وجبة بعد جلسة CPM — يعظّم إصلاح الأنسجة.</span></p>
@@ -5106,8 +5106,8 @@
       <div class="contact-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
       <div class="contact-card-label"><span data-en>Service Area</span><span data-ar>منطقة الخدمة</span></div>
       <div class="contact-card-value">
-        <span data-en>Dubai · Sharjah · Abu Dhabi<br><span style="font-size:0.85rem;color:#888;">UAE-wide on request</span></span>
-        <span data-ar>دبي · الشارقة · أبوظبي<br><span style="font-size:0.85rem;color:#888;">جميع أنحاء الإمارات بالطلب</span></span>
+        <span data-en>Dubai · Sharjah · Abu Dhabi<br><span style="font-size:0.85rem;color:#627b8c;">UAE-wide on request</span></span>
+        <span data-ar>دبي · الشارقة · أبوظبي<br><span style="font-size:0.85rem;color:#627b8c;">جميع أنحاء الإمارات بالطلب</span></span>
       </div>
       <div class="contact-card-note"><span data-en>Same-day delivery within Dubai</span><span data-ar>توصيل في نفس اليوم داخل دبي</span></div>
     </div>
@@ -5208,7 +5208,7 @@
       <span data-en>Privacy Policy</span>
       <span data-ar>سياسة الخصوصية</span>
     </h1>
-    <p style="color:#666;font-size:0.85rem;margin-top:8px;">
+    <p style="color:#879cab;font-size:0.85rem;margin-top:8px;">
       <span data-en>Last updated: 1 March 2026</span>
       <span data-ar>آخر تحديث: ١ مارس ٢٠٢٦</span>
     </p>
@@ -5228,11 +5228,11 @@
       color: var(--gold-light);
       margin-bottom: 14px;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(49,146,184,0.15);
     }
     .pp-section p, .pp-section li {
       font-size: 0.93rem;
-      color: #aaa;
+      color: #465864;
       line-height: 1.8;
       margin-bottom: 10px;
     }
@@ -5241,13 +5241,13 @@
     html[lang="ar"] .pp-section { text-align: right; direction: rtl; font-family: 'Noto Naskh Arabic', serif; }
     html[lang="ar"] .pp-section h2 { font-family: 'Noto Naskh Arabic', serif; }
     .pp-highlight {
-      background: rgba(201,168,76,0.06);
-      border: 1px solid rgba(201,168,76,0.15);
+      background: rgba(49,146,184,0.06);
+      border: 1px solid rgba(49,146,184,0.15);
       border-radius: 8px;
       padding: 18px 22px;
       margin-bottom: 14px;
       font-size: 0.9rem;
-      color: #bbb;
+      color: #384650;
       line-height: 1.75;
     }
   </style>
@@ -5279,16 +5279,16 @@
       <span data-ar>نجمع فقط المعلومات التي تقدمها طوعاً عند إجراء حجز أو الاشتراك في نشرتنا الإخبارية:</span>
     </p>
     <ul>
-      <li><span data-en><strong style="color:#ccc;">Full name</strong> — to address you and process your rental</span><span data-ar><strong style="color:#ccc;">الاسم الكامل</strong> — لمخاطبتك ومعالجة طلب الإيجار</span></li>
-      <li><span data-en><strong style="color:#ccc;">Phone / WhatsApp number</strong> — to confirm your booking and coordinate delivery</span><span data-ar><strong style="color:#ccc;">رقم الهاتف / واتساب</strong> — لتأكيد حجزك وتنسيق التوصيل</span></li>
-      <li><span data-en><strong style="color:#ccc;">Surgery date</strong> — to schedule delivery at the right time for your recovery</span><span data-ar><strong style="color:#ccc;">تاريخ الجراحة</strong> — لجدولة التوصيل في الوقت المناسب لتعافيك</span></li>
-      <li><span data-en><strong style="color:#ccc;">Delivery area</strong> — to arrange logistics and confirm service coverage</span><span data-ar><strong style="color:#ccc;">منطقة التوصيل</strong> — لترتيب اللوجستيات وتأكيد تغطية الخدمة</span></li>
-      <li><span data-en><strong style="color:#ccc;">Additional notes</strong> — any extra information you choose to share</span><span data-ar><strong style="color:#ccc;">ملاحظات إضافية</strong> — أي معلومات إضافية تختار مشاركتها</span></li>
-      <li><span data-en><strong style="color:#ccc;">Email address</strong> — only if you subscribe to our recovery tips newsletter</span><span data-ar><strong style="color:#ccc;">عنوان البريد الإلكتروني</strong> — فقط إذا اشتركت في نشرتنا الإخبارية</span></li>
+      <li><span data-en><strong style="color:#153651;">Full name</strong> — to address you and process your rental</span><span data-ar><strong style="color:#153651;">الاسم الكامل</strong> — لمخاطبتك ومعالجة طلب الإيجار</span></li>
+      <li><span data-en><strong style="color:#153651;">Phone / WhatsApp number</strong> — to confirm your booking and coordinate delivery</span><span data-ar><strong style="color:#153651;">رقم الهاتف / واتساب</strong> — لتأكيد حجزك وتنسيق التوصيل</span></li>
+      <li><span data-en><strong style="color:#153651;">Surgery date</strong> — to schedule delivery at the right time for your recovery</span><span data-ar><strong style="color:#153651;">تاريخ الجراحة</strong> — لجدولة التوصيل في الوقت المناسب لتعافيك</span></li>
+      <li><span data-en><strong style="color:#153651;">Delivery area</strong> — to arrange logistics and confirm service coverage</span><span data-ar><strong style="color:#153651;">منطقة التوصيل</strong> — لترتيب اللوجستيات وتأكيد تغطية الخدمة</span></li>
+      <li><span data-en><strong style="color:#153651;">Additional notes</strong> — any extra information you choose to share</span><span data-ar><strong style="color:#153651;">ملاحظات إضافية</strong> — أي معلومات إضافية تختار مشاركتها</span></li>
+      <li><span data-en><strong style="color:#153651;">Email address</strong> — only if you subscribe to our recovery tips newsletter</span><span data-ar><strong style="color:#153651;">عنوان البريد الإلكتروني</strong> — فقط إذا اشتركت في نشرتنا الإخبارية</span></li>
     </ul>
     <p>
-      <span data-en>We do <strong style="color:#ccc;">not</strong> collect payment card details (all payments are handled in person or via bank transfer), and we do not use cookies or analytics tracking on this website.</span>
-      <span data-ar>نحن <strong style="color:#ccc;">لا</strong> نجمع تفاصيل بطاقات الدفع (تتم جميع المدفوعات شخصياً أو عبر التحويل المصرفي)، ولا نستخدم ملفات تعريف الارتباط أو أدوات تتبع التحليلات على هذا الموقع.</span>
+      <span data-en>We do <strong style="color:#153651;">not</strong> collect payment card details (all payments are handled in person or via bank transfer), and we do not use cookies or analytics tracking on this website.</span>
+      <span data-ar>نحن <strong style="color:#153651;">لا</strong> نجمع تفاصيل بطاقات الدفع (تتم جميع المدفوعات شخصياً أو عبر التحويل المصرفي)، ولا نستخدم ملفات تعريف الارتباط أو أدوات تتبع التحليلات على هذا الموقع.</span>
     </p>
   </div>
 
@@ -5334,8 +5334,8 @@
       <span data-ar>نحن لا نبيع أو نؤجر أو نتاجر بمعلوماتك الشخصية. قد تُشارك بياناتك فقط مع:</span>
     </p>
     <ul>
-      <li><span data-en><strong style="color:#ccc;">Our delivery team</strong> — solely to complete the physical delivery of your machine</span><span data-ar><strong style="color:#ccc;">فريق التوصيل لدينا</strong> — فقط لإتمام التوصيل الفعلي لجهازك</span></li>
-      <li><span data-en><strong style="color:#ccc;">UAE authorities</strong> — if required by law or a valid legal process</span><span data-ar><strong style="color:#ccc;">الجهات الحكومية في الإمارات</strong> — إذا كان مطلوباً بموجب القانون أو إجراء قانوني صحيح</span></li>
+      <li><span data-en><strong style="color:#153651;">Our delivery team</strong> — solely to complete the physical delivery of your machine</span><span data-ar><strong style="color:#153651;">فريق التوصيل لدينا</strong> — فقط لإتمام التوصيل الفعلي لجهازك</span></li>
+      <li><span data-en><strong style="color:#153651;">UAE authorities</strong> — if required by law or a valid legal process</span><span data-ar><strong style="color:#153651;">الجهات الحكومية في الإمارات</strong> — إذا كان مطلوباً بموجب القانون أو إجراء قانوني صحيح</span></li>
     </ul>
   </div>
 
@@ -5346,8 +5346,8 @@
       <span data-ar>٦. المدة التي نحتفظ فيها ببياناتك</span>
     </h2>
     <p>
-      <span data-en>We retain your booking information for up to <strong style="color:#ccc;">2 years</strong> after your rental ends, for the purposes of providing support, resolving disputes, and complying with UAE commercial record-keeping requirements. Newsletter subscribers may unsubscribe at any time.</span>
-      <span data-ar>نحتفظ بمعلومات حجزك لمدة تصل إلى <strong style="color:#ccc;">سنتين</strong> بعد انتهاء فترة الإيجار، لأغراض تقديم الدعم وحل النزاعات والامتثال لمتطلبات الاحتفاظ بالسجلات التجارية في الإمارات. يمكن للمشتركين في النشرة الإخبارية إلغاء الاشتراك في أي وقت.</span>
+      <span data-en>We retain your booking information for up to <strong style="color:#153651;">2 years</strong> after your rental ends, for the purposes of providing support, resolving disputes, and complying with UAE commercial record-keeping requirements. Newsletter subscribers may unsubscribe at any time.</span>
+      <span data-ar>نحتفظ بمعلومات حجزك لمدة تصل إلى <strong style="color:#153651;">سنتين</strong> بعد انتهاء فترة الإيجار، لأغراض تقديم الدعم وحل النزاعات والامتثال لمتطلبات الاحتفاظ بالسجلات التجارية في الإمارات. يمكن للمشتركين في النشرة الإخبارية إلغاء الاشتراك في أي وقت.</span>
     </p>
   </div>
 
@@ -5362,10 +5362,10 @@
       <span data-ar>بموجب قانون حماية البيانات الشخصية في الإمارات (المرسوم الاتحادي بقانون رقم 45 لسنة 2021)، يحق لك:</span>
     </p>
     <ul>
-      <li><span data-en><strong style="color:#ccc;">Access</strong> — request a copy of the personal data we hold about you</span><span data-ar><strong style="color:#ccc;">الوصول</strong> — طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك</span></li>
-      <li><span data-en><strong style="color:#ccc;">Correction</strong> — ask us to correct inaccurate or incomplete data</span><span data-ar><strong style="color:#ccc;">التصحيح</strong> — طلب تصحيح البيانات غير الدقيقة أو غير المكتملة</span></li>
-      <li><span data-en><strong style="color:#ccc;">Deletion</strong> — request erasure of your data, subject to legal retention requirements</span><span data-ar><strong style="color:#ccc;">الحذف</strong> — طلب محو بياناتك، مع مراعاة متطلبات الاحتفاظ القانونية</span></li>
-      <li><span data-en><strong style="color:#ccc;">Withdrawal of consent</strong> — opt out of newsletter communications at any time</span><span data-ar><strong style="color:#ccc;">سحب الموافقة</strong> — إلغاء الاشتراك في اتصالات النشرة الإخبارية في أي وقت</span></li>
+      <li><span data-en><strong style="color:#153651;">Access</strong> — request a copy of the personal data we hold about you</span><span data-ar><strong style="color:#153651;">الوصول</strong> — طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك</span></li>
+      <li><span data-en><strong style="color:#153651;">Correction</strong> — ask us to correct inaccurate or incomplete data</span><span data-ar><strong style="color:#153651;">التصحيح</strong> — طلب تصحيح البيانات غير الدقيقة أو غير المكتملة</span></li>
+      <li><span data-en><strong style="color:#153651;">Deletion</strong> — request erasure of your data, subject to legal retention requirements</span><span data-ar><strong style="color:#153651;">الحذف</strong> — طلب محو بياناتك، مع مراعاة متطلبات الاحتفاظ القانونية</span></li>
+      <li><span data-en><strong style="color:#153651;">Withdrawal of consent</strong> — opt out of newsletter communications at any time</span><span data-ar><strong style="color:#153651;">سحب الموافقة</strong> — إلغاء الاشتراك في اتصالات النشرة الإخبارية في أي وقت</span></li>
     </ul>
     <p>
       <span data-en>To exercise any of these rights, contact us via WhatsApp or email (see Section 9). We will respond within 30 days.</span>
@@ -5415,7 +5415,7 @@
   </div>
 
   <!-- Back link -->
-  <div style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.07);">
+  <div style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(19,49,73,0.07);">
     <a href="#" onclick="showPage('home');return false;" style="color:var(--gold);font-size:0.88rem;text-decoration:none;letter-spacing:0.06em;">
       ← <span data-en>Back to Home</span><span data-ar>العودة إلى الرئيسية</span>
     </a>
@@ -6443,7 +6443,7 @@
         dashArray: key === 'blue' ? '6 4' : null
       }).bindPopup(
         '<strong style="color:' + z.color + '">' + a.name + '</strong><br>' +
-        '<span style="font-size:12px;color:#aaa">' + z.label + '</span>'
+        '<span style="font-size:12px;color:#465864">' + z.label + '</span>'
       ).addTo(map);
 
       /* dot marker */
